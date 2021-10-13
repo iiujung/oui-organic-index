@@ -19,7 +19,8 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+
+
 
 
     <link rel="stylesheet" href="./css/site.css">
@@ -42,6 +43,14 @@
             content: "\f106";
             float: right;
         } */
+        table {
+            font-size: 1em;
+        }
+
+        .ui-draggable,
+        .ui-droppable {
+            background-position: top;
+        }
     </style>
 </head>
 
@@ -134,9 +143,8 @@
                     <div>
                         <div class="card-body">
                             <p>
-                                <label for="amount">Price range:</label>
-                                <input type="text" id="amount" readonly
-                                    style="border:0; color:#f6931f; font-weight:bold;">
+                                <label for="amount">價格範圍：</label>
+                                <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
                             </p>
 
                             <div id="slider-range"></div>
@@ -252,6 +260,9 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script>
         feather.replace();
     </script>
@@ -260,7 +271,7 @@
             $("#slider-range").slider({
                 range: true,
                 min: 0,
-                max: 500,
+                max: 2000,
                 values: [75, 300],
                 slide: function (event, ui) {
                     $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
@@ -270,7 +281,6 @@
                 " - $" + $("#slider-range").slider("values", 1));
         });
     </script>
-
 </body>
 
 </html>
