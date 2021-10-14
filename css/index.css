@@ -6,7 +6,22 @@
 .bg--primary {
     background-color: #FFF6F4;
 }
+.bg--light {
+    background-color: #F8F8F8;
+}
 .title--deco {
     border-bottom: 1px solid #222;
     max-width: 220px;
+}
+
+/* accordion */
+.fa-angle-up {
+    transition: all 0.3s ease;
+ }
+.btn-nav-accordion.collapsed .fa-angle-up {
+  transform: rotate(180deg);
+}
+/* btn:hover */
+a:hover .btn-outline-darks {
+    background-color: #454346;
 }

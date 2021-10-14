@@ -30,130 +30,767 @@
 
     <title>oui product detail</title>
     <style>
+        /*  */
+        .tag span {
+            font-size: 12px;
+            padding: 4px 8px;
+            border: 1px solid #D96B6B;
+            word-break: break-all
+        }
 
+        .product-count {
+            height: 30px;
+        }
+
+        .product-count a {
+            text-decoration: none;
+            font-weight: 700;
+            color: black;
+        }
+
+        .button-count {
+            display: inline-block;
+            width: 44px;
+            height: 44px;
+            font-size: 36px;
+            line-height: 44px;
+            text-align: center;
+            border: none;
+            outline: none;
+            background-color: white;
+        }
+
+        .button-count:active {
+            background-color: silver;
+        }
+
+        .number-product {
+            display: inline-block;
+            width: 50px;
+            height: 44px;
+            font-size: 24px;
+            border-radius: 4px;
+            border: 1px solid silver;
+            text-align: center;
+        }
+
+        :disabled {}
+
+        /*  */
+
+        .badge {
+            font-size: 25px;
+            font-weight: 200
+        }
+
+        .badge i {
+            font-size: 20px;
+            font-weight: 200
+        }
+
+        .about-rating {
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 10px
+        }
+
+        .total-ratings {
+            font-size: 12px
+        }
+
+        .progress {
+            margin-top: 2px;
+            border-radius: 0px;
+            padding-left: 0px
+        }
+
+        /*  */
+        label.radio {
+            cursor: pointer
+        }
+
+        label.radio input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            pointer-events: none
+        }
+
+        label.radio span {
+            padding: 2px 9px;
+            border: 1px solid #343A40;
+            display: inline-block;
+            color: #343A40;
+            border-radius: 3px;
+            text-transform: uppercase
+        }
+
+        label.radio input:checked+span {
+            border-color: #343A40;
+            background-color: #343A40;
+            color: #fff
+        }
     </style>
 </head>
 
 <body>
-    <!-- ProductDetail-title -->
+    <!-- breadcrumb -->
     <div class="container">
         <div class="row">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">唯有機</a></li>
+                    <li class="breadcrumb-item"><i data-feather="home"></i><a href="#"></i>
+                            唯有機</a></li>
                     <li class="breadcrumb-item" aria-current="page">臉部護理</li>
                     <li class="breadcrumb-item active" aria-current="page">全護植萃臉部防曬乳SPF50-無色**</li>
                 </ol>
             </nav>
         </div>
     </div>
-    <div class="container">
+    <!-- product-detail -->
+    <div class="container my-3 my-md-4">
         <div class="row">
-            <div class="col-md-6"></div>
             <div class="col-md-6">
-                <h5 class="text-muted">Acorelle</h5>
-                <h2>全護植萃臉部防曬乳SPF50-無色**</h2>
+                <div class="row">
+                    <div class="col-md-9 order-md-2">
+                        <div class="big-img"><img src="./img/index/product01.jpg" alt="" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-3 order-md-1 d-md-block d-none">
+                        <div class="small-img"><img src="./img/index/product01.jpg" alt="" class="img-fluid"></div>
+                        <div class="small-img"><img src="./img/index/product02.jpg" alt="" class="img-fluid"></div>
+                        <div class="small-img"><img src="./img/index/product03.jpg" alt="" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-3 order-md-1 d-md-none d-block">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="small-img"><img src="./img/index/product01.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="small-img"><img src="./img/index/product02.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="small-img"><img src="./img/index/product03.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product-detail">
+                    <h5 class="text-muted">Acorelle</h5>
+                    <h2>全護植萃臉部防曬乳SPF50-無色**</h2>
+                    <div class="tag d-flex flex-wrap">
+                        <span>買一送一活動</span>
+                        <span>指定會員獨享</span>
+                        <span>超取滿NT$2,000免運</span>
+                        <span>買一送一活動</span>
+                        <span>國家/地區配送</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="rate">
+                        <div class="productBlock_button">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p>5.0 | 500 則評論</p>
+                    </div>
+
+                </div>
+                <div class="product-price">
+                    <span>NT$2,150</span>
+                    <span>NT$1,180</span>
+                </div>
+                <div class="product-choice">
+                    <p>規格</p>
+                    <div class="input-group mb-3 d-block d-md-none">
+                        <select class="custom-select" id="inputGroupSelect02">
+                            <option selected>請選擇規格</option>
+                            <option value="1">50ML</option>
+                            <option value="2">220ML</option>
+                            <option value="3">500ML</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3 d-none d-md-block">
+                        <div class="sizes">
+                            <label class="radio"> <input type="radio" name="size" value="S" checked> <span>50ML</span>
+                            </label> <label class="radio"> <input type="radio" name="size" value="M"> <span>220ML</span>
+                            </label>
+                            <label class="radio"> <input type="radio" name="size" value="L"> <span>500ML</span> </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-choice">
+                    <p>數量</p>
+                    <div class="d-flex justify-content-around">
+                        <div class="product-count mr-2">
+                            <button class="button-count no-active" disabled>-</button>
+                            <input type="text" readonly class="number-product" value="1">
+                            <button class="button-count">+</button>
+                        </div>
+                        <button class="btn btn-dark">加入購物車</button>
+                        <i data-feather="heart"></i>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="title-bar bg--secondary">
-        <div class="container">
-            <div class="row">
-                <h2>99%植萃成分｜Ecocert 環保認證</h2>
+    <!-- slogan title -->
+    <div class="title-bar bg--light">
+        <div class="container text-center py-md-4">
+            <h2>99%植萃成分｜Ecocert 環保認證</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="Product_List">
+                <!--tab title-->
+                <ul class="nav nav-tabs nav-bordered justify-content-start pt-5">
+                    <li class="nav-item">
+                        <a href="#nav-product1" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                            <i class=" d-lg-none d-block mr-1"></i>
+                            <h3 class="d-block">產品描述</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a href="#nav-product2" data-toggle="tab" aria-expanded="true" class="nav-link">
+                            <i class="d-lg-none d-block mr-1"></i>
+                            <h3 class="d-block">成份</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a href="#nav-product3" data-toggle="tab" aria-expanded="false" class="nav-link">
+                            <i class="d-lg-none d-block mr-1"></i>
+                            <h3 class="d-block">使用建議</h3>
+                        </a>
+                    </li>
+                </ul>
+                <!--tab content Start-->
+                <div class="tab-content py-5" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-product1" role="tabpanel"
+                        aria-labelledby="nav-product1">
+                        <p class="p-4">
+                            SPF50植萃防曬x噴頭設計，運用純天然礦物「二氧化鈦」，長效阻隔UVA與UVB紫外線波長高達375nm，溫和保護肌膚，輕鬆抵禦紫外線侵擾。
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-product2" role="tabpanel" aria-labelledby="nav-product2">
+                        <p class="p-4">123</p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-product3" role="tabpanel" aria-labelledby="nav-product3">
+                        <p class="p-4">123</p>
+                    </div>
+                </div>
+                <!--tab content End-->
             </div>
         </div>
     </div>
 
-    <div class="product-addition bg--primary">
-        <div class="container">
-            <div class="row">
+
+
+    <div class="product-addition bg--primary mb-5">
+        <div class="container py-5">
+            <div class="title text-center">
                 <h2>商品加價購</h2>
+                <div class="title_border mb-2 mb-md-4"></div>
+            </div>
+            <div class="row auto-slider-5 justify-content-center">
+                <div>
+                    <div class="card bg-transparent border-0 ">
+                        <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
+                        <div class="card-body px-0">
+
+                            <i data-feather="heart"></i>
+
+                            <div class="productBlock-title">
+                                <h3 class="productBlock-name">
+                                    <small class="text-secondary">Acroelle</small>
+                                    <br> 全護植萃臉部防曬乳SPF50 -無色**
+                                </h3>
+                            </div>
+                            <div class="productBlock_price">
+                                <div class="productBlock_rrp">
+                                    <span>NT$2,250</span>
+                                </div>
+                                <div class="productBlock_price">
+                                    <span>NT$1,180</span>
+                                </div>
+                            </div>
+                            <div class="productBlock_button">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <a class="btn btn-dark stretched-link">一起購買</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card bg-transparent border-0 ">
+                        <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
+                        <div class="card-body px-0">
+
+                            <i data-feather="heart"></i>
+
+                            <div class="productBlock-title">
+                                <h3 class="productBlock-name">
+                                    <small class="text-secondary">Acroelle</small>
+                                    <br> 全護植萃臉部防曬乳SPF50 -無色**
+                                </h3>
+                            </div>
+                            <div class="productBlock_price">
+                                <div class="productBlock_rrp">
+                                    <span>NT$2,250</span>
+                                </div>
+                                <div class="productBlock_price">
+                                    <span>NT$1,180</span>
+                                </div>
+                            </div>
+                            <div class="productBlock_button">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <a class="btn btn-dark stretched-link">一起購買</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card bg-transparent border-0 ">
+                        <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
+                        <div class="card-body px-0">
+
+                            <i data-feather="heart"></i>
+
+                            <div class="productBlock-title">
+                                <h3 class="productBlock-name">
+                                    <small class="text-secondary">Acroelle</small>
+                                    <br> 全護植萃臉部防曬乳SPF50 -無色**
+                                </h3>
+                            </div>
+                            <div class="productBlock_price">
+                                <div class="productBlock_rrp">
+                                    <span>NT$2,250</span>
+                                </div>
+                                <div class="productBlock_price">
+                                    <span>NT$1,180</span>
+                                </div>
+                            </div>
+                            <div class="productBlock_button">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <a class="btn btn-dark stretched-link">一起購買</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card bg-transparent border-0 ">
+                        <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
+                        <div class="card-body px-0">
+
+                            <i data-feather="heart"></i>
+
+                            <div class="productBlock-title">
+                                <h3 class="productBlock-name">
+                                    <small class="text-secondary">Acroelle</small>
+                                    <br> 全護植萃臉部防曬乳SPF50 -無色**
+                                </h3>
+                            </div>
+                            <div class="productBlock_price">
+                                <div class="productBlock_rrp">
+                                    <span>NT$2,250</span>
+                                </div>
+                                <div class="productBlock_price">
+                                    <span>NT$1,180</span>
+                                </div>
+                            </div>
+                            <div class="productBlock_button">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <a class="btn btn-dark stretched-link">一起購買</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card bg-transparent border-0 ">
+                        <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
+                        <div class="card-body px-0">
+
+                            <i data-feather="heart"></i>
+
+                            <div class="productBlock-title">
+                                <h3 class="productBlock-name">
+                                    <small class="text-secondary">Acroelle</small>
+                                    <br> 全護植萃臉部防曬乳SPF50 -無色**
+                                </h3>
+                            </div>
+                            <div class="productBlock_price">
+                                <div class="productBlock_rrp">
+                                    <span>NT$2,250</span>
+                                </div>
+                                <div class="productBlock_price">
+                                    <span>NT$1,180</span>
+                                </div>
+                            </div>
+                            <div class="productBlock_button">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <a class="btn btn-dark stretched-link">一起購買</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
-    <div class="recommended-product">
+    <div class="recommended-product mb-5">
         <div class="container">
-            <div class="row"></div>
+            <div class="title text-center">
+                <h2>其他人也看了...</h2>
+                <div class="title_border mb-2 mb-md-4"></div>
+            </div>
+            <div class="row auto-slider-5 justify-content-center">
+                <div>
+                    <div class="card border-0">
+                        <a href="#">
+                            <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
+                        </a>
+                        <div class="productAddToWishlist_buttonIcon">
+                            <div class="productAddToWishlist">
+                                <i data-feather="heart"></i>
+                            </div>
+                        </div>
+                        <a class="productBlock_link" href="#">
+                            <div class="productBlock-title">
+                                <h3 class="productBlock-name">
+                                    <small class="text-secondary">Acroelle</small>
+                                    <br> 全護植萃臉部防曬乳SPF50 -無色**
+                                </h3>
+
+                            </div>
+                        </a>
+                        <div class="productBlock_price">
+                            <div class="productBlock_rrp">
+                                <span>NT$2,250</span>
+                            </div>
+                            <div class="productBlock_price">
+                                <span>NT$1,180</span>
+                            </div>
+                        </div>
+                        <div class="productBlock_button">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card border-0">
+                        <a href="#">
+                            <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
+                        </a>
+                        <div class="productAddToWishlist_buttonIcon">
+                            <div class="productAddToWishlist">
+                                <i data-feather="heart"></i>
+                            </div>
+                        </div>
+                        <a class="productBlock_link" href="#">
+                            <div class="productBlock-title">
+                                <h3 class="productBlock-name">
+                                    <small class="text-secondary">Acroelle</small>
+                                    <br> 全護植萃臉部防曬乳SPF50 -無色**
+                                </h3>
+                            </div>
+                        </a>
+                        <div class="productBlock_price">
+                            <div class="productBlock_rrp">
+                                <span>NT$2,250</span>
+                            </div>
+                            <div class="productBlock_price">
+                                <span>NT$1,180</span>
+                            </div>
+                        </div>
+                        <div class="productBlock_button">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card border-0">
+                        <a href="#">
+                            <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
+                        </a>
+                        <div class="productAddToWishlist_buttonIcon">
+                            <div class="productAddToWishlist">
+                                <i data-feather="heart"></i>
+                            </div>
+                        </div>
+                        <a class="productBlock_link" href="#">
+                            <div class="productBlock-title">
+                                <h3 class="productBlock-name">
+                                    <small class="text-secondary">Acroelle</small>
+                                    <br> 全護植萃臉部防曬乳SPF50 -無色**
+                                </h3>
+                            </div>
+                        </a>
+                        <div class="productBlock_price">
+                            <div class="productBlock_rrp">
+                                <span>NT$2,250</span>
+                            </div>
+                            <div class="productBlock_price">
+                                <span>NT$1,180</span>
+                            </div>
+                        </div>
+                        <div class="productBlock_button">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card border-0">
+                        <a href="#">
+                            <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
+                        </a>
+                        <div class="productAddToWishlist_buttonIcon">
+                            <div class="productAddToWishlist">
+                                <i data-feather="heart"></i>
+                            </div>
+                        </div>
+                        <a class="productBlock_link" href="#">
+                            <div class="productBlock-title">
+                                <h3 class="productBlock-name">
+                                    <small class="text-secondary">Acroelle</small>
+                                    <br> 全護植萃臉部防曬乳SPF50 -無色**
+                                </h3>
+                            </div>
+                        </a>
+                        <div class="productBlock_price">
+                            <div class="productBlock_rrp">
+                                <span>NT$2,250</span>
+                            </div>
+                            <div class="productBlock_price">
+                                <span>NT$1,180</span>
+                            </div>
+                        </div>
+                        <div class="productBlock_button">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card border-0">
+                        <a href="#">
+                            <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
+                        </a>
+                        <div class="productAddToWishlist_buttonIcon">
+                            <div class="productAddToWishlist">
+                                <i data-feather="heart"></i>
+                            </div>
+                        </div>
+                        <a class="productBlock_link" href="#">
+                            <div class="productBlock-title">
+                                <h3 class="productBlock-name">
+                                    <small class="text-secondary">Acroelle</small>
+                                    <br> 全護植萃臉部防曬乳SPF50 -無色**
+                                </h3>
+                            </div>
+                        </a>
+                        <div class="productBlock_price">
+                            <div class="productBlock_rrp">
+                                <span>NT$2,250</span>
+                            </div>
+                            <div class="productBlock_price">
+                                <span>NT$1,180</span>
+                            </div>
+                        </div>
+                        <div class="productBlock_button">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- review total review count progressbar -->
     <div class="comment-main">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <div class="title">
                         <h3>會員評論</h3>
                     </div>
-                    <div class="rate-scrore d-flex">
+                    <div class="rate-scrore d-flex justify-content-between align-items-end">
                         <div class="star">
-                            <p>5.0</p>
+                            <div class="productBlock_button">
+                                <p class="mb-0">5.0</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
                         </div>
-                        <p class="text-muted">999則評論</p>
+                        <p class="text-muted mb-0">999則評論</p>
                     </div>
-                    <a href="#" class="btn btn-outline-primary">留下評論</a>
+                    <div class="rate-progress">
+                        <div class="rating-progress-bars p-3 mt-2">
+                            <div class="d-flex align-items-center">
+                                <span class="stars"> <span>5 <i class="fa fa-star"></i></span> </span>
+                                <div class="col px-2">
+                                    <div class="progress" style="height: 5px;">
+                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 99%;"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div> <span class="percent"> <span>99%</span> </span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="stars"> <span>4 <i class="fa fa-star"></i></span> </span>
+                                <div class="col px-2">
+                                    <div class="progress" style="height: 5px;">
+                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 1%;"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div> <span class="percent"> <span>1%</span> </span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="stars"> <span>3 <i class="fa fa-star"></i></span> </span>
+                                <div class="col px-2">
+                                    <div class="progress" style="height: 5px;">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 0%;"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div> <span class="percent"> <span>0%</span> </span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="stars"> <span>2 <i class="fa fa-star"></i></span> </span>
+                                <div class="col px-2">
+                                    <div class="progress" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 0%;"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div> <span class="percent"> <span>0%</span> </span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="stars"> <span>1 <i class="fa fa-star "></i></span> </span>
+                                <div class="col px-2">
+                                    <div class="progress" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 0%;"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div> <span class="percent"> <span>0%</span> </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#" class="btn btn-outline-dark">留下評論</a>
                 </div>
-                <div class="col-md-10">
-                    <p>熱門會員評論</p>
-                    <div class="card">
-                        <div class="card-title">
-                            <p>出貨迅速的好賣家，商品質感OK</p>
-                            <div class="star"></div>
+                <div class="col-md-9">
+                    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                        <!-- Accordion card -->
+                        <div class="card bg-transparent border-0 ">
+
+                            <!-- Card header -->
+                            <div class="card-header bg-transparent" role="tab" id="headingOne1">
+                                <a class="btn-nav-accordion" data-toggle="collapse" data-parent="#accordionEx"
+                                    href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                    <div class="title d-flex justify-content-between">
+                                        <h5 class="mb-0 ">熱門會員評論 </h5>
+                                        <i class="fas fa-angle-up rotate-icon"></i>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="card-head">
+                                        <p class="font-weight-bold">出貨迅速的好賣家，商品質感OK</p>
+                                        <div class="star"></div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>寄件速度超快 商品感覺很有質感味道好好聞喔 等不及等等洗澡使用了 終於收到了很開心、使用後很喜歡:)</p>
+                                        <p class="f">12/31/2021 by joanne_1019</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="./img/index/product01.jpg" alt="" width="30%">
+                                        <img src="./img/index/product01.jpg" alt="" width="30%">
+                                        <img src="./img/index/product01.jpg" alt="" width="30%">
+                                    </div>
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="mb-0 mr-2">覺得這個評論是否有幫助？</p>
+                                        <a href="#" class="btn btn-outline-dark mr-2">是 <span>12</span></a>
+                                        <a href="#" class="btn btn-outline-dark">否</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="card-body">
-                            <p>寄件速度超快 商品感覺很有質感味道好好聞喔 等不及等等洗澡使用了 終於收到了很開心、使用後很喜歡:)</p>
-                            <p>12/31/2021 by joanne_1019</p>
-                        </div>
-                        <div class="card-body">
-                            <img src="" alt="">
-                        </div>
-                        <div class="card-body">
-                            <p>覺得這個評論是否有幫助？</p>
-                            <a href="#" class="btn btn-outline-primary">是</a>
-                            <a href="#" class="btn btn-outline-primary">否</a>
-                        </div>
+                        <!-- Accordion card -->
+
                     </div>
+                    <!-- Accordion wrapper -->
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- ProductDetail-description -->
-    <!-- recommend_activity -->
-    <!-- ProductDetail-relatedProducts -->
-    <!-- recommended_restaurants -->
-    <!-- comment-main -->
-    <!-- review -->
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
 
-    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/counter.js"></script>
+
     <script>
         feather.replace();
-    </script>
-    <script>
-        $(function () {
-            $("#slider-range").slider({
-                range: true,
-                min: 0,
-                max: 2000,
-                values: [75, 300],
-                slide: function (event, ui) {
-                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-                }
-            });
-            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-                " - $" + $("#slider-range").slider("values", 1));
-        });
     </script>
 </body>
 
