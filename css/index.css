@@ -1,27 +1,69 @@
 .subtitle {
-    font-family: 'Italianno', cursive;
-    font-size: 1.5rem;
+  font-family: "Italianno", cursive;
+  font-size: 1.5rem;
 }
 
 .bg--primary {
-    background-color: #FFF6F4;
+  background-color: #fff6f4;
 }
 .bg--light {
-    background-color: #F8F8F8;
+  background-color: #f8f8f8;
+}
+.bg--gray {
+  background-color: #eeeeee;
 }
 .title--deco {
-    border-bottom: 1px solid #222;
-    max-width: 220px;
+  border-bottom: 1px solid #222;
+  max-width: 220px;
 }
 
-/* accordion */
+/* accordion up/down */
 .fa-angle-up {
-    transition: all 0.3s ease;
- }
+  transition: all 0.3s ease;
+}
 .btn-nav-accordion.collapsed .fa-angle-up {
   transform: rotate(180deg);
 }
 /* btn:hover */
 a:hover .btn-outline-darks {
-    background-color: #454346;
+  background-color: #454346;
+}
+
+/* hover product */
+.hover {
+  position: relative;
+}
+.hover img {
+  position: absolute;
+  transition: opacity 0.3s ease-in;
+}
+.hover img:nth-of-type(2):hover {
+  opacity: 0;
+}
+.pt--200 {
+  padding-top: 200px;
+}
+
+/* filter */
+.btn-outline-gray {
+  color: #454346;
+  border-color: #eeeeee;
+}
+
+.title_border--y {
+  width: 127px;
+  border: 1px solid;
+  border-color: #fff0 #fff0 #454346 #fff0;
+}
+
+/* questionnaire */
+.block-width {
+  max-width: 780px;
+}
+
+/* register */
+.register input,
+.register select,
+.registertextarea {
+  max-width: 416px;
 }

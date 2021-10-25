@@ -227,7 +227,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-choice">
+                <div class="product-choice mb-4">
                     <p>數量</p>
                     <div class="d-flex justify-content-around">
                         <div class="product-count mr-2">
@@ -238,8 +238,16 @@
                         <button class="btn btn-dark">加入購物車</button>
                         <i data-feather="heart"></i>
                     </div>
-
                 </div>
+                <ul>
+                    <li>99%植萃成分</li>
+                    <li>Ecocert 環保認證 100%回收PCR包裝</li>
+                    <li>全成分可有機分解 無石化成分</li>
+                    <li>無動物實驗 植萃高清潔力，敏弱手部肌膚適用</li>
+                    <li>香味：尤加利 </li>
+                    <li>Made in Denmark</li>
+                </ul>
+                <img src="./img/index/seal.png" alt="">
             </div>
         </div>
     </div>
@@ -251,7 +259,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="Product_List">
+            <div class="Product_List  d-md-block d-none">
                 <!--tab title-->
                 <ul class="nav nav-tabs nav-bordered justify-content-start pt-5">
                     <li class="nav-item">
@@ -290,6 +298,52 @@
                 </div>
                 <!--tab content End-->
             </div>
+            <!-- 手機板 -->
+            <div class="accordion d-md-none d-block" id="accordionProduct">
+                <div class="col-12 mb-2">
+                    <div class="border-bottom" id="producInfo">
+                        <h3 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            產品描述
+                        </h3>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="producInfo"
+                        data-parent="#accordionProduct">
+                        <div class="card-body">
+                            SPF50植萃防曬x噴頭設計，運用純天然礦物「二氧化鈦」，長效阻隔UVA與UVB紫外線波長高達375nm，溫和保護肌膚，輕鬆抵禦紫外線侵擾。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-2">
+                    <div class="border-bottom" id="productIngredients">
+                        <h3 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            成份
+                        </h3>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="productIngredients"
+                        data-parent="#accordionProduct">
+                        <div class="card-body">
+                            2
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-2">
+                    <div class="border-bottom" id="productSuggest">
+                        <h3 data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            使用建議
+                        </h3>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="productSuggest"
+                        data-parent="#accordionProduct">
+                        <div class="card-body">
+                            3
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -303,12 +357,14 @@
             </div>
             <div class="row auto-slider-5 justify-content-center">
                 <div>
-                    <div class="card bg-transparent border-0 ">
-                        <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
-                        <div class="card-body px-0">
-
+                    <div class="card bg-transparent border-0">
+                        <div class="hover">
+                            <img src="./img/index/product03-hover.jpg" alt="日光意境" width="202" height="202"
+                                class="img-fluid">
+                            <img src="./img/index/product03.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
+                        </div>
+                        <div class="card-body px-0 pt--200">
                             <i data-feather="heart"></i>
-
                             <div class="productBlock-title">
                                 <h3 class="productBlock-name">
                                     <small class="text-secondary">Acroelle</small>
@@ -329,7 +385,7 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
-                                <a class="btn btn-dark stretched-link">一起購買</a>
+                                <a class="btn btn-dark">一起購買</a>
                             </div>
                         </div>
                     </div>
@@ -402,9 +458,7 @@
                     <div class="card bg-transparent border-0 ">
                         <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
                         <div class="card-body px-0">
-
                             <i data-feather="heart"></i>
-
                             <div class="productBlock-title">
                                 <h3 class="productBlock-name">
                                     <small class="text-secondary">Acroelle</small>
@@ -434,9 +488,7 @@
                     <div class="card bg-transparent border-0 ">
                         <img src="./img/index/product01.jpg" alt="日光意境" width="202" height="202" class="img-fluid">
                         <div class="card-body px-0">
-
                             <i data-feather="heart"></i>
-
                             <div class="productBlock-title">
                                 <h3 class="productBlock-name">
                                     <small class="text-secondary">Acroelle</small>
@@ -462,7 +514,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
@@ -657,7 +708,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="title">
+                    <div class="comment-title mb-3">
                         <h3>會員評論</h3>
                     </div>
                     <div class="rate-scrore d-flex justify-content-between align-items-end">
@@ -674,7 +725,7 @@
                         <p class="text-muted mb-0">999則評論</p>
                     </div>
                     <div class="rate-progress">
-                        <div class="rating-progress-bars p-3 mt-2">
+                        <div class="rating-progress-bars pb-2 mt-2">
                             <div class="d-flex align-items-center">
                                 <span class="stars"> <span>5 <i class="fa fa-star"></i></span> </span>
                                 <div class="col px-2">
@@ -723,7 +774,91 @@
                         </div>
 
                     </div>
-                    <a href="#" class="btn btn-outline-dark">留下評論</a>
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#commentModal">
+                        留下評論
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="commentModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">留下評論</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="contaienr">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img src="./img/index/product01.jpg" alt="" class="img-fluid">
+                                                <p>Acorelle 全護植萃臉部防曬乳SPF50 -無色**</p>
+                                                <div class="input-group mb-3 d-none d-md-block">
+                                                    <div class="comment-title">規格</div>
+                                                    <div class="sizes">
+                                                        <label class="radio"> <input type="radio" name="comment-size"
+                                                                value="50ml" checked> <span>50ML</span>
+                                                        </label> <label class="radio"> <input type="radio"
+                                                                name="comment-size" value="100ml"> <span>100ML</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="inputStar" class="form-label">評價此商品</label>
+                                                    <div class="star">
+                                                        <div class="productBlock_button">
+                                                            <p class="mb-0">5.0</p>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="inputTitle" class="form-label">評論標題</label>
+                                                    <input type="text" class="form-control" id="inputTitle"></input>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="inputComment" class="form-label">評論內容</label>
+                                                    <textarea class="form-control" id="inputComment"
+                                                        rows="3"></textarea>
+                                                </div>
+
+
+                                                <div class="input-group mb-3">
+                                                    <button type="button" class="btn btn-outline-dark mr-5"
+                                                        data-dismiss="modal">上傳照片</button>
+                                                    <p class="text-muted">至多2張</p>
+                                                    <div class="input-group mb-3">
+                                                        <button type="button" class="btn btn-outline-dark mr-5"
+                                                            data-dismiss="modal">上傳影片</button>
+                                                        <p class="text-muted">至多1MB</p>
+                                                    </div>
+                                                    <div class="mb-3 d-flex">
+                                                        <p class="mb-0">覺得這個評論是否有幫助？</p>
+                                                        <a href="#" class="btn btn-outline-dark mr-2">是
+                                                            <span>12</span></a>
+                                                        <a href="#" class="btn btn-outline-dark">否</a>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <button type="button" class="btn btn-dark"
+                                                            data-dismiss="modal">送出評論</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md-9">
                     <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
@@ -736,10 +871,9 @@
                                 <a class="btn-nav-accordion" data-toggle="collapse" data-parent="#accordionEx"
                                     href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
                                     <div class="title d-flex justify-content-between">
-                                        <h5 class="mb-0 ">熱門會員評論 </h5>
+                                        <h5 class="mb-0">熱門會員評論 </h5>
                                         <i class="fas fa-angle-up rotate-icon"></i>
                                     </div>
-
                                 </a>
                             </div>
 
@@ -753,7 +887,7 @@
                                     </div>
                                     <div class="card-body">
                                         <p>寄件速度超快 商品感覺很有質感味道好好聞喔 等不及等等洗澡使用了 終於收到了很開心、使用後很喜歡:)</p>
-                                        <p class="f">12/31/2021 by joanne_1019</p>
+                                        <p class="text-secondary">12/31/2021 by joanne_1019</p>
                                     </div>
                                     <div class="card-body">
                                         <img src="./img/index/product01.jpg" alt="" width="30%">
@@ -776,22 +910,21 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script src="./js/slick.js"></script>
-    <script src="./js/counter.js"></script>
+        <script src="./js/slick.js"></script>
+        <script src="./js/counter.js"></script>
 
-    <script>
-        feather.replace();
-    </script>
+        <script>
+            feather.replace();
+        </script>
 </body>
 
 </html>
