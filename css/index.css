@@ -161,7 +161,7 @@ label.radio input:checked + span {
   border-color: #fff0 #fff0 #454346 #fff0;
 }
 
-/* 頁面:會員專區登陸/註冊頁_問券調查
+/* 頁面:會員專區登陸/註冊頁
 M-questionnaire.html------------ */
 .block-width {
   max-width: 780px;
