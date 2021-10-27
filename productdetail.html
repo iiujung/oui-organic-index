@@ -30,107 +30,7 @@
 
     <title>oui product detail</title>
     <style>
-        /*  */
-        .tag span {
-            font-size: 12px;
-            padding: 4px 8px;
-            border: 1px solid #D96B6B;
-            word-break: break-all
-        }
 
-        .product-count {
-            height: 30px;
-        }
-
-        .product-count a {
-            text-decoration: none;
-            font-weight: 700;
-            color: black;
-        }
-
-        .button-count {
-            display: inline-block;
-            width: 44px;
-            height: 44px;
-            font-size: 36px;
-            line-height: 44px;
-            text-align: center;
-            border: none;
-            outline: none;
-            background-color: white;
-        }
-
-        .button-count:active {
-            background-color: silver;
-        }
-
-        .number-product {
-            display: inline-block;
-            width: 50px;
-            height: 44px;
-            font-size: 24px;
-            border-radius: 4px;
-            border: 1px solid silver;
-            text-align: center;
-        }
-
-        :disabled {}
-
-        /*  */
-
-        .badge {
-            font-size: 25px;
-            font-weight: 200
-        }
-
-        .badge i {
-            font-size: 20px;
-            font-weight: 200
-        }
-
-        .about-rating {
-            font-size: 15px;
-            font-weight: 500;
-            margin-top: 10px
-        }
-
-        .total-ratings {
-            font-size: 12px
-        }
-
-        .progress {
-            margin-top: 2px;
-            border-radius: 0px;
-            padding-left: 0px
-        }
-
-        /*  */
-        label.radio {
-            cursor: pointer
-        }
-
-        label.radio input {
-            position: absolute;
-            top: 0;
-            left: 0;
-            visibility: hidden;
-            pointer-events: none
-        }
-
-        label.radio span {
-            padding: 2px 9px;
-            border: 1px solid #343A40;
-            display: inline-block;
-            color: #343A40;
-            border-radius: 3px;
-            text-transform: uppercase
-        }
-
-        label.radio input:checked+span {
-            border-color: #343A40;
-            background-color: #343A40;
-            color: #fff
-        }
     </style>
 </head>
 
@@ -199,17 +99,21 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
+                            <span>5.0 | 500 則評論</span>
+
                         </div>
-                        <p>5.0 | 500 則評論</p>
                     </div>
 
                 </div>
-                <div class="product-price">
-                    <span>NT$2,150</span>
-                    <span>NT$1,180</span>
+                <div class="product-price d-flex align-items-center">
+                    <div class="productBlock_rrp mr-2">
+                        <span>NT$2,150</span>
+                    </div>
+                    <h3>NT$1,180</h3>
                 </div>
                 <div class="product-choice">
                     <p>規格</p>
+                    <!-- 手機板 -->
                     <div class="input-group mb-3 d-block d-md-none">
                         <select class="custom-select" id="inputGroupSelect02">
                             <option selected>請選擇規格</option>
@@ -218,6 +122,7 @@
                             <option value="3">500ML</option>
                         </select>
                     </div>
+                    <!-- 桌機板 -->
                     <div class="input-group mb-3 d-none d-md-block">
                         <div class="sizes">
                             <label class="radio"> <input type="radio" name="size" value="S" checked> <span>50ML</span>
@@ -229,14 +134,16 @@
                 </div>
                 <div class="product-choice mb-4">
                     <p>數量</p>
-                    <div class="d-flex justify-content-around">
+                    <div class="d-flex">
                         <div class="product-count mr-2">
                             <button class="button-count no-active" disabled>-</button>
                             <input type="text" readonly class="number-product" value="1">
                             <button class="button-count">+</button>
                         </div>
-                        <button class="btn btn-dark">加入購物車</button>
-                        <i data-feather="heart"></i>
+                        <button class="btn btn-dark mr-2">加入購物車</button>
+                        <div class="icon pt-2">
+                            <i data-feather="heart"></i>
+                        </div>
                     </div>
                 </div>
                 <ul>
@@ -922,8 +829,9 @@
         <script src="./js/slick.js"></script>
         <script src="./js/counter.js"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
         <script>
-            feather.replace();
+            feather.replace()
         </script>
 </body>
 

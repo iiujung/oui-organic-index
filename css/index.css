@@ -1,8 +1,8 @@
+/* 全域設定--------------------- */
 .subtitle {
   font-family: "Italianno", cursive;
   font-size: 1.5rem;
 }
-
 .bg--primary {
   background-color: #fff6f4;
 }
@@ -29,7 +29,7 @@ a:hover .btn-outline-darks {
   background-color: #454346;
 }
 
-/* hover product */
+/* hover product img show */
 .hover {
   position: relative;
 }
@@ -43,8 +43,113 @@ a:hover .btn-outline-darks {
 .pt--200 {
   padding-top: 200px;
 }
+/* 全域設定-END------------------- */
 
-/* filter */
+/* 頁面:productetail---------- */
+/*  */
+.tag span {
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid #d96b6b;
+  word-break: break-all;
+}
+
+.product-count {
+  height: 30px;
+}
+
+.product-count a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+.button-count {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.button-count:active {
+  background-color: silver;
+}
+
+.number-product {
+  display: inline-block;
+  width: 50px;
+  height: 44px;
+  font-size: 24px;
+  border-radius: 4px;
+  border: 1px solid silver;
+  text-align: center;
+}
+
+:disabled {
+}
+
+/*  */
+
+.badge {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.badge i {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.about-rating {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.total-ratings {
+  font-size: 12px;
+}
+
+.progress {
+  margin-top: 2px;
+  border-radius: 0px;
+  padding-left: 0px;
+}
+
+/*  */
+label.radio {
+  cursor: pointer;
+}
+
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.radio span {
+  padding: 8px 16px;
+  border: 1px solid #A7A7A7;
+  display: inline-block;
+  color: #A7A7A7;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+label.radio input:checked + span {
+  border-color: #343a40;
+  background-color: #fff;
+  color: #343a40;
+}
+
+/* 頁面:brandfilter------------ */
 .btn-outline-gray {
   color: #454346;
   border-color: #eeeeee;
@@ -56,14 +161,209 @@ a:hover .btn-outline-darks {
   border-color: #fff0 #fff0 #454346 #fff0;
 }
 
-/* questionnaire */
+/* 頁面:會員專區登陸/註冊頁_問券調查
+M-questionnaire.html------------ */
 .block-width {
   max-width: 780px;
 }
+label.checkbox {
+  cursor: pointer;
+}
 
-/* register */
+label.checkbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.checkbox span {
+  margin-bottom: 8px;
+  margin-right: 4px;
+  padding: 8px 36px;
+  border: 1px solid #454346;
+  display: inline-block;
+  color: #454346;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  label.checkbox span {
+    margin-bottom: 16px;
+    margin-right: 8px;
+    padding: 8px 48px;
+  }
+}
+@media (min-width: 1110px) {
+  label.checkbox span {
+    padding: 8px 58px;
+  }
+}
+
+label.checkbox input:checked + span {
+  border-color: #454346;
+  background-color: #454346;
+  color: #fff;
+}
+
+/* 頁面:會員專區登陸/註冊頁
+M-notMemberotp.html
+M-forgotPasswordResend.html
+M-otpResend.html
+M-forgotPasswordotp.html
+M-notMemberResend.html
+M-register.html
+M-resetPassword.html
+M-loginPassword.html
+M-login.html
+--------  */
+/* form style*/
+.register input[type="tel"]:disabled {
+  color: #343a40;
+  background-color: #fff;
+  border: transparent;
+}
 .register input,
 .register select,
 .registertextarea {
-  max-width: 416px;
+  max-width: 670px;
+}
+
+.register .form-control {
+  color: #a7a7a7;
+  border: 1px solid #b1b1b1;
+  border-radius: 0rem;
+}
+
+.register .form-check-label span {
+  color: #4bddcc;
+}
+
+/* radio style */
+.register input[type="radio"] {
+  opacity: 0;
+  margin: 0;
+  width: 0;
+}
+
+label[for="male"],
+label[for="female"],
+label[for="yes"],
+label[for="no"],
+label[for="childnocomand"],
+label[for="nocomand"] {
+  padding-left: 26px;
+  background: url(../img/index/radio.png) no-repeat;
+  background-position: 0 -24px;
+  cursor: pointer;
+}
+input:checked + label[for="male"],
+input:checked + label[for="female"],
+input:checked + label[for="yes"],
+input:checked + label[for="no"],
+input:checked + label[for="childnocomand"],
+input:checked + label[for="nocomand"] {
+  background-position: 0 0;
+}
+/* checkbox style */
+input[type="checkbox"] {
+  visibility: hidden;
+}
+.main {
+  display: block;
+  position: relative;
+  padding-left: 4px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.style-checkbox {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color:  #fff;
+  border: 1px solid #707070;
+}
+.style-checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.main input:checked ~ .style-checkbox {
+  background-color: #707070;
+}
+
+.main input:checked ~ .style-checkbox:after {
+  display: block;
+}
+
+.main .style-checkbox:after {
+  left: 6px;
+  bottom: 4px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.style-checkbox--sm {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color:  #fff;
+  border: 1px solid #707070;
+}
+.style-checkbox--sm:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.main input:checked ~ .style-checkbox--sm {
+  background-color: #707070;
+}
+
+.main input:checked ~ .style-checkbox--sm:after {
+  display: block;
+}
+
+.main .style-checkbox--sm:after {
+  left: 3px;
+  bottom: 4px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* 灰色間隔線 */
+.deco-line {
+  border-bottom: 1px solid #D5D5D5;
+}
+
+
+/* password eye icon styling */
+label {
+  position: relative;
+  display: block;
+}
+.show,.hide {
+  position: absolute;
+  right: 16px;
+  top: 38px;
+  font-size: 28px;
 }
