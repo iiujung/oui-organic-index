@@ -90,8 +90,6 @@ a:hover .btn-outline-darks {
   text-align: center;
 }
 
-:disabled {
-}
 
 /*  */
 
@@ -353,17 +351,67 @@ input[type="checkbox"] {
 /* 灰色間隔線 */
 .deco-line {
   border-bottom: 1px solid #D5D5D5;
+  padding-bottom: 2rem;
 }
-
 
 /* password eye icon styling */
 label {
   position: relative;
   display: block;
 }
-.show,.hide {
+.register .show,.register .hide {
   position: absolute;
   right: 16px;
   top: 38px;
   font-size: 28px;
 }
+
+
+/* 會員專區 A-account */
+
+.acountCenter .progress-outer {
+  width: 100%;
+  height: .6rem;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+}
+
+.acountCenter .progress-inner {
+  width: 40%;
+  height: .6rem;
+  background-color: #FCE5DF;
+  border-radius: 1rem;
+}
+
+.acountCenter .width-custom {
+  width: 100%;
+}
+@media (min-width:768px) {
+  .acountCenter .width-custom {
+    width: 75%;
+  }
+
+}
+
+.icon--y {
+  width: 36px;
+  height: 36px;
+}
+
+.acountCenter .deco-line {
+  border-bottom: 1px solid #D5D5D5;
+  padding-bottom: 2rem;
+}
+
+.deco-outline-red {
+  border: 1px solid red;
+}
+.text-red {
+  color: #D96B6B;
+} 
+
+.custom-dot li {
+  list-style-image: url(../img/index/icon-leaf.png);
+}
+
+
