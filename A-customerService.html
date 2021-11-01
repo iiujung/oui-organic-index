@@ -27,7 +27,9 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/stylehelp.css">
   <link rel="stylesheet" href="./css/index.css">
-  <title>會員專區：d.會員制度說明</title>
+  <title>會員專區：客服留言</title>
+
+
 </head>
 
 
@@ -39,8 +41,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><i data-feather="home"></i><a href="#"></i>
               唯有機</a></li>
-          <li class="breadcrumb-item" aria-current="page">會員專區</li>
-          <li class="breadcrumb-item active" aria-current="page">會員專區</li>
+          <li class="breadcrumb-item active" aria-current="page">客服留言</li>
         </ol>
       </nav>
     </div>
@@ -81,7 +82,7 @@
                               <li class="py-2 subpage"><a href="#">會員專區</a></li>
                               <li class="py-2 subpage"><a href="#">我的點數</a></li>
                               <li class="py-2 subpage"><a href="#">點數兌換專區</a></li>
-                              <li class="py-2 subpage active"><a href="#">會員制度說明</a></li>
+                              <li class="py-2 subpage"><a href="#">會員制度說明</a></li>
                               <li class="py-2 subpage"><a href="#">會員等級說明</a></li>
                               <li class="py-2 subpage"><a href="#">會員個人資料</a></li>
                             </ul>
@@ -121,8 +122,8 @@
                       <li class="py-2 subpage "><a href="#">會員專區</a></li>
                       <li class="py-2 subpage"><a href="#">我的點數</a></li>
                       <li class="py-2 subpage"><a href="#">點數兌換專區</a></li>
-                      <li class="py-2 subpage active"><a href="#">會員制度說明</a></li>
-                      <li class="py-2 subpage"><a href="#">會員等級說明</a></li>
+                      <li class="py-2 subpage"><a href="#">會員制度說明</a></li>
+                      <li class="py-2 subpage active"><a href="#">會員等級說明</a></li>
                       <li class="py-2 subpage"><a href="#">會員個人資料</a></li>
                     </ul>
                   </div>
@@ -139,15 +140,85 @@
         </div>
         <!-- 主要內容 -->
         <div class="col-md-10">
-          <div class="row pb-4 px-4">
-           <h3 class="font-weight-bold mb-3">會員制度說明</h3>
-           <div class="policy-content px-2">
-               <p> 1.申請入會須提供個人資料並下載官方APP，並完成系統註冊手續。系統資訊須為真實且正確，若有不實或資訊不足，本商店有權不受理其入會申請。</p>
-               <p>2.會員資格或優惠辦法皆由Oui Organic 唯有機訂定，請會員務必遵守。Oui Organic 唯有機保有隨時變更及增列會員權益相關條文，且不需另行通知之權益。</p>
-               <p> 3.超商取貨未取達1次，Oui Organic 唯有機有權取消您的會員資格，請特別留意。</p>
-           </div>
-           <p></p>
-          </div>
+          <h3 class="header">客服留言</h3>
+          <section class="customService my-3">
+            <ul class="list-unstyled offset-md-1">
+              <li class="deco-line pt-3">
+                <div class="icon">
+                  <i data-feather="phone"></i>
+                  電話客服
+                </div>
+                <p class="mb-0 font-weight-bold">0800066686</p>
+                <p>電話客服時間：星期一～星期五，10:00～18:00</p>
+              </li>
+              <li class="deco-line pt-3">
+                <div class="icon">
+                  <img src="./img/index/social-icon-line.png" alt="">
+                  LINE 客服
+                </div>
+                <p class="mb-0 font-weight-bold">ID:@ouiorganic</p>
+                <p>Line線上客服時間：星期一～星期五，10:00～18:00</p>
+              </li>
+              <li class="deco-line pt-3">
+                <div class="icon">
+                  <img src="./img/index/social-icon-facebook.png" alt="">
+                  FB 客服
+                </div>
+                <p class="mb-0 font-weight-bold">ID:@ouiorganic</p>
+                <p>FB線上客服時間：星期一～星期五，10:00～18:00</p>
+              </li>
+            </ul>
+            <!--tab title-->
+            <ul class="nav nav-tabs nav-bordered nav-fill flex-nowrap">
+              <li class="nav-item p-0">
+                <a href="#nav-product1" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                  <i class=" d-lg-none d-block mr-1"></i>
+                  <h4 class="d-block">客服留言</h4>
+                </a>
+              </li>
+              <li class="nav-item p-0">
+                <a href="#nav-product2" data-toggle="tab" aria-expanded="true" class="nav-link">
+                  <i class="d-lg-none d-block mr-1"></i>
+                  <h4 class="d-block">問答紀錄</h4>
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content py-5" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-product1" role="tabpanel" aria-labelledby="nav-product1">
+                <form action="">
+                  <label class="col-form-label" for="address">問題類別 :</label>
+                  <div class="form-row">
+                    <select class="custom-select">
+                      <option selected>請選擇</option>
+                      <option  value="商店相關" class="fa">&#xf54f 商店相關</option>
+                      <option value="訂單進度" class="fa">&#xf3e5 訂單進度</option>
+                      <option value="退換維修相關問題" class="fa">&#xf15c 退換維修相關問題</option>
+                      <option value="會員相關" class="fa">&#xf3e0 會員相關</option>
+                      <option value="折價券" class="fa">&#xf3ff 折價券</option>
+                      <option value="發票與退款" class="fa">&#xf772 發票與退款</option>
+                    </select>
+
+                    <select class="custom-select">
+                      <option selected>請選擇</option>
+                      <option value="出貨進度">出貨進度</option>
+                      <option value="更改訂單">更改訂單</option>
+                      <option value="取消訂單">取消訂單</option>
+                      <option value="訂購是否成功">訂購是否成功</option>
+                    </select>
+                  </div>
+                  <label class="col-form-label" for="address">問題內容：</label>
+                  <div class="form-row" class="w-100">
+                    <textarea id="textarea" rows="5" class="w-100"></textarea>
+                  </div>
+                </form>
+              </div>
+              <!-- +升等等級 展開內容 -->
+              <div class="tab-pane fade" id="nav-product2" role="tabpanel" aria-labelledby="nav-product2">
+
+              </div>
+            </div>
+          </section>
+
         </div>
       </div>
     </section>
@@ -167,13 +238,13 @@
   <script>
     feather.replace()
   </script>
-    <script>
-      $(document).ready(function () {
-        $('.subpage').click(function() {
+  <script>
+    $(document).ready(function () {
+      $('.subpage').click(function () {
         $(this).addClass('active').siblings().removeClass('active');
-  });
       });
-    </script>
+    });
+  </script>
 </body>
 
 </html>
