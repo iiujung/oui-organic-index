@@ -69,13 +69,13 @@
                       <div class="card border-0">
                         <div class="category border-bottom py-2 bg-light" id="headingOne">
                           <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
-                            type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                            aria-controls="collapseOne">
+                            type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                            aria-controls="collapseTwo">
                             會員專區
                             <i class="fas fa-angle-up"></i>
                           </a>
                         </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne"
                           data-parent="#categoryAccordion">
                           <div class="card-body">
                             <ul class="list-unstyled pageSelect">
@@ -90,7 +90,7 @@
                         </div>
                       </div>
                     </div>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled ">
                       <li class="border-bottom p-2"><a href="#">訂單查詢</a></li>
                       <li class="border-bottom p-2"><a href="#">收藏清單</a></li>
                       <li class="border-bottom p-2"><a href="#">我的優惠券</a></li>
@@ -107,15 +107,15 @@
           <section class="list d-none d-md-block mb-1">
             <div class="accordion" id="categoryAccordion">
               <div class="card border-0">
-                <div class="category border-bottom py-2 bg-light" id="headingOne">
+                <div class="category border-bottom py-2 page-y" id="headingOne">
                   <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
-                    type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                     aria-controls="collapseOne">
                     會員專區
                     <i class="fas fa-angle-up"></i>
                   </a>
                 </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                   data-parent="#categoryAccordion">
                   <div class="card-body">
                     <ul class="list-unstyled pageSelect">
@@ -123,7 +123,7 @@
                       <li class="py-2 subpage"><a href="#">我的點數</a></li>
                       <li class="py-2 subpage"><a href="#">點數兌換專區</a></li>
                       <li class="py-2 subpage"><a href="#">會員制度說明</a></li>
-                      <li class="py-2 subpage active"><a href="#">會員等級說明</a></li>
+                      <li class="py-2 subpage"><a href="#">會員等級說明</a></li>
                       <li class="py-2 subpage"><a href="#">會員個人資料</a></li>
                     </ul>
                   </div>
@@ -131,10 +131,10 @@
               </div>
             </div>
             <ul class="list-unstyled">
-              <li class="border-bottom p-2"><a href="#">訂單查詢</a></li>
-              <li class="border-bottom p-2"><a href="#">收藏清單</a></li>
-              <li class="border-bottom p-2"><a href="#">我的優惠券</a></li>
-              <li class="border-bottom p-2"><a href="#">客服留言</a></li>
+              <li class="border-bottom page-y p-2"><a href="#">訂單查詢</a></li>
+              <li class="border-bottom page-y p-2"><a href="#">收藏清單</a></li>
+              <li class="border-bottom page-y p-2"><a href="#">我的優惠券</a></li>
+              <li class="border-bottom page-y active p-2"><a href="#">客服留言</a></li>
             </ul>
           </section>
         </div>
@@ -188,7 +188,7 @@
                 <form action="">
                   <label class="col-form-label" for="address">問題類別 :</label>
                   <div class="form-row">
-                    <select class="custom-select">
+                    <select class="form-control mb-2 mr-3">
                       <option selected>請選擇</option>
                       <option  value="商店相關" class="fa">&#xf54f 商店相關</option>
                       <option value="訂單進度" class="fa">&#xf3e5 訂單進度</option>
@@ -198,7 +198,7 @@
                       <option value="發票與退款" class="fa">&#xf772 發票與退款</option>
                     </select>
 
-                    <select class="custom-select">
+                    <select class="form-control mb-2">
                       <option selected>請選擇</option>
                       <option value="出貨進度">出貨進度</option>
                       <option value="更改訂單">更改訂單</option>
@@ -207,9 +207,11 @@
                     </select>
                   </div>
                   <label class="col-form-label" for="address">問題內容：</label>
-                  <div class="form-row" class="w-100">
-                    <textarea id="textarea" rows="5" class="w-100"></textarea>
+                  <div class="form-row mb-2">
+                    <textarea id="textarea" rows="8" class="w-100" placeholder="請填寫問題內容(限填150字)"></textarea>
                   </div>
+                  <button type="button" class="btn btn-dark">送出</button>
+                  <p>您的訊息，商店將會盡快為您進行回覆。</p>
                 </form>
               </div>
               <!-- +升等等級 展開內容 -->
@@ -243,6 +245,9 @@
       $('.subpage').click(function () {
         $(this).addClass('active').siblings().removeClass('active');
       });
+      $('.page-y').click(function(){
+        $(this).addClass('active').siblings().removeClass('active')
+      })
     });
   </script>
 </body>

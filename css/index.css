@@ -447,4 +447,22 @@ A-levelinfo.html
   background-color: white;
   border: 1px solid #a7a7a7;
 }
+/* 會員專區:客服留言
+A-customerService.html
+*/
+.customService .form-control {
+  color: #a7a7a7;
+  border: 1px solid #b1b1b1;
+  border-radius: 0rem;
+}
+.customService textarea {
+  padding: 8px;
+  color: #a7a7a7;
+  border: 1px solid #b1b1b1;
+  border-radius: .5rem;
+  max-width: 750px;
+}
 
+.page-y.active {
+  background: #f8f9fa;
+}
