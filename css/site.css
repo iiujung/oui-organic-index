@@ -1154,6 +1154,9 @@ M-loginPassword.html
 M-login.html
 --------  */
 /* form style*/
+.register .sex .form-check,.register .child .form-check {
+    width: 35%;
+}
 .register input[type="tel"]:disabled {
   color: #343a40;
   background-color: #fff;
