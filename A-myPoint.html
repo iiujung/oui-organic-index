@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/stylehelp.css">
   <link rel="stylesheet" href="./css/index.css"> -->
-  <title>唯有機-收藏清單</title>
+  <title>會員專區：會員專區＿我的點數</title>
 
 
 </head>
@@ -41,7 +41,8 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><i data-feather="home"></i><a href="#"></i>
               唯有機</a></li>
-          <li class="breadcrumb-item active" aria-current="page">收藏清單</li>
+          <li class="breadcrumb-item" aria-current="page">會員專區</li>
+          <li class="breadcrumb-item active" aria-current="page">我的點數</li>
         </ol>
       </nav>
     </div>
@@ -80,7 +81,7 @@
                           <div class="card-body">
                             <ul class="list-unstyled pageSelect">
                               <li class="py-2 subpage"><a href="#">會員專區</a></li>
-                              <li class="py-2 subpage"><a href="#">我的點數</a></li>
+                              <li class="py-2 subpage active"><a href="#">我的點數</a></li>
                               <li class="py-2 subpage"><a href="#">點數兌換專區</a></li>
                               <li class="py-2 subpage"><a href="#">會員制度說明</a></li>
                               <li class="py-2 subpage"><a href="#">會員等級說明</a></li>
@@ -107,19 +108,20 @@
           <section class="list d-none d-md-block mb-1">
             <div class="accordion" id="categoryAccordion">
               <div class="card border-0">
-                <div class="category border-bottom py-2 page-y" id="headingOne">
+                <div class="category border-bottom py-2 page-y active" id="headingOne">
                   <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
-                    type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                    type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                     aria-controls="collapseOne">
                     會員專區
                     <i class="fas fa-angle-up"></i>
                   </a>
                 </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#categoryAccordion">
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#categoryAccordion">
                   <div class="card-body">
                     <ul class="list-unstyled pageSelect">
-                      <li class="py-2 subpage "><a href="#">會員專區</a></li>
-                      <li class="py-2 subpage"><a href="#">我的點數</a></li>
+                      <li class="py-2 subpage"><a href="#">會員專區</a></li>
+                      <li class="py-2 subpage active"><a href="#">我的點數</a></li>
                       <li class="py-2 subpage"><a href="#">點數兌換專區</a></li>
                       <li class="py-2 subpage"><a href="#">會員制度說明</a></li>
                       <li class="py-2 subpage"><a href="#">會員等級說明</a></li>
@@ -131,7 +133,7 @@
             </div>
             <ul class="list-unstyled">
               <li class="border-bottom page-y p-2"><a href="#">訂單查詢</a></li>
-              <li class="border-bottom page-y active p-2"><a href="#">收藏清單</a></li>
+              <li class="border-bottom page-y p-2"><a href="#">收藏清單</a></li>
               <li class="border-bottom page-y p-2"><a href="#">我的優惠券</a></li>
               <li class="border-bottom page-y p-2"><a href="#">客服留言</a></li>
             </ul>
@@ -139,136 +141,88 @@
         </div>
         <!-- 主要內容 -->
         <div class="col-md-10">
-          <div class="row justify-content-between">
-            <h3 class="header">收藏清單</h3>
-            <div class="sort-by">
-              <label>排列順序依</label>
-              <div class="btn-group">
-                <select class="form-control" id="CurrentSearchOption_Sort" name="CurrentSearchOption.Sort">
-                  <option value="price-asc">上市順序 由新到舊</option>
-                  <option value="price-desc">上市順序 由舊到新</option>
-                </select>
+          <section class="myPoint">
+            <div class="bg--light p-4">
+              <div class="d-flex justify-content-between mb-3">
+                <h3 class="font-weight-bold">我的點數</h3>
+                <a href="#" class="alink-deco text-muted">點數說明</a>
               </div>
-            </div>
-          </div>
-          <section class="collection my-3">
-            <div class="row">
-              <div class="col-md-4 col-6">
-                <a href="#">
-                  <div class="position-relative">
-                    <img src="./img/index/product01.jpg" alt="日光意境" class="img-fluid">
-                    <div class="position-absolute fix-right-top">
-                      <i data-feather="x"></i>
-                    </div>
-                  </div>
-                </a>
-                <a class="productBlock_link" href="#">
-                  <h4>
-                    Acroelle全護植萃臉部防曬乳SPF50 -無色**
-                  </h4>
-                </a>
-                <div class="productDiscount">
-                  <span class="deco-outline-red">
-                    加價購67折
-                  </span>
+              <div class="d-flex justify-content-around my-5">
+                <div class="allpoint text-center ">
+                  <h1>4403</h1>
+                  <p>累積點數</p>
                 </div>
-                <div class="productBlock_price d-flex align-items-center">
-                  <div class="productBlock_price mr-2">
-                    <span>NT$1,180</span>
-                  </div>
-                  <div class="productBlock_rrp color-lightgrey">
-                    <span>NT$2,250</span>
-                  </div>
-                </div>
-                <div class="productBlock_button">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div class="productBlock_button">
-                  <button type="button" class="btn btn-dark w-100">加入購物車</button>
-                </div>
-              </div>
-              <div class="col-md-4 col-6">
-                <a href="#">
-                  <div class="position-relative">
-                    <img src="./img/index/product01.jpg" alt="日光意境" class="img-fluid">
-                    <div class="position-absolute fix-right-top">
-                      <i data-feather="x"></i>
-                    </div>
-                  </div>
-                </a>
-                <a class="productBlock_link" href="#">
-                  <h4>
-                    Acroelle全護植萃臉部防曬乳SPF50 -無色**
-                  </h4>
-                </a>
-                <div class="productDiscount">
-                  <span class="deco-outline-red">
-                    加價購67折
-                  </span>
-                </div>
-                <div class="productBlock_price d-flex align-items-center">
-                  <div class="productBlock_price mr-2">
-                    <span>NT$1,180</span>
-                  </div>
-                  <div class="productBlock_rrp color-lightgrey">
-                    <span>NT$2,250</span>
-                  </div>
-                </div>
-                <div class="productBlock_button">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div class="productBlock_button">
-                  <button type="button" class="btn btn-dark w-100">加入購物車</button>
-                </div>
-              </div>
-              <div class="col-md-4 col-6">
-                <a href="#">
-                  <div class="position-relative">
-                    <img src="./img/index/product01.jpg" alt="日光意境" class="img-fluid">
-                    <div class="position-absolute fix-right-top">
-                      <i data-feather="x"></i>
-                    </div>
-                  </div>
-                </a>
-                <a class="productBlock_link" href="#">
-                  <h4>
-                    Acroelle全護植萃臉部防曬乳SPF50 -無色**
-                  </h4>
-                </a>
-                <div class="productDiscount">
-                  <span class="deco-outline-red">
-                    加價購67折
-                  </span>
-                </div>
-                <div class="productBlock_price d-flex align-items-center">
-                  <div class="productBlock_price mr-2">
-                    <span>NT$1,180</span>
-                  </div>
-                  <div class="productBlock_rrp color-lightgrey">
-                    <span>NT$2,250</span>
-                  </div>
-                </div>
-                <div class="productBlock_button">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div class="productBlock_button">
-                  <button type="button" class="btn btn-dark w-100">加入購物車</button>
+                <div class="border-left"></div>
+                <div class="expirationpoints text-center">
+                  <h1 class="text-red ">37</h1>
+                  <p>2021/12/25 即將到期</p>
                 </div>
               </div>
             </div>
+            <div class="d-flex justify-content-end my-4">
+              <a href="#" class="btn btn-dark">會員點數兌換專區</a>
+            </div>
+            <!--tab title-->
+            <ul class="nav nav-tabs nav-bordered nav-fill flex-nowrap">
+              <li class="nav-item p-0">
+                <a href="#nav-product1" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                  <i class=" d-lg-none d-block mr-1"></i>
+                  <h4 class="d-block">點數紀錄</h4>
+                </a>
+              </li>
+              <li class="nav-item p-0">
+                <a href="#nav-product2" data-toggle="tab" aria-expanded="true" class="nav-link">
+                  <i class="d-lg-none d-block mr-1"></i>
+                  <h4 class="d-block">可用點數</h4>
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content py-5" id="nav-tabContent">
+              <!-- +點數紀錄 展開內容 -->
+              <div class="tab-pane fade show active" id="nav-product1" role="tabpanel" aria-labelledby="nav-product1">
+                <table class="table mb-5">
+                  <thead>
+                    <tr>
+                      <th scope="col">日期</th>
+                      <th scope="col" class="d-none d-md-block">類型</th>
+                      <th scope="col">訂單編號</th>
+                      <th scope="col" class="d-none d-md-block">詳情</th>
+                      <th scope="col">紅利點數</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">2023/08/31 23:59</td>
+                      <td class="d-none d-md-block">消費給點</td>
+                      <td>TS2100220N000148</td>
+                      <td class="d-none d-md-block">-</td>
+                      <td>+1,160</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">2023/08/31 23:59</td>
+                      <td class="d-none d-md-block">消費給點</td>
+                      <td>TS2100220N000148</td>
+                      <td class="d-none d-md-block">-</td>
+                      <td>+1,160</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">2023/08/31 23:59</td>
+                      <td class="d-none d-md-block">消費給點</td>
+                      <td>TS2100220N000148</td>
+                      <td class="d-none d-md-block">-</td>
+                      <td>+1,160</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="text-center">
+                  <p class="text-muted alink-deco">至多顯示一年內的資料</p>
+                </div>
+              </div>
+              <!-- +可用點數 展開內容 -->
+              <div class="tab-pane fade" id="nav-product2" role="tabpanel" aria-labelledby="nav-product2">
 
+              </div>
+            </div>
           </section>
 
         </div>
@@ -296,7 +250,7 @@
         $(this).addClass('active').siblings().removeClass('active');
       });
       $('.page-y').click(function () {
-        $(this).addClass('active').siblings().removeClass('active')
+        $(this).addClass('active').siblings().removeClass('active');
       })
     });
   </script>

@@ -1,4 +1,3 @@
-/* Set widths on the form inputs since otherwise they're 100% wide */
 /* 全域設定--------------------- */
 /* +文字 顏色 裝飾線 */
 .subtitle {
@@ -29,6 +28,11 @@
 .title--deco {
   border-bottom: 1px solid #222;
   max-width: 220px;
+}
+
+.alink-deco {
+  text-decoration: underline solid;
+  text-underline-offset: 8px;
 }
 
 .icon--y {
@@ -288,6 +292,11 @@ input[type="checkbox"] {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+/* 定位 */
+.fix-right-top {
+  right: 0;
+  top: 0;
+}
 
 /* 全域設定-END------------------- */
 
@@ -526,6 +535,11 @@ footer li {
 section .btn-dark {
   background-color: #454346;
   border-color: #454346;
+}
+section .btn-disabled {
+  background-color: #A7A7A7;
+  border-color: #A7A7A7;
+  color: white;
 }
 
 section .btn-outline-dark {
@@ -1275,6 +1289,30 @@ A-customerService.html
 .page-y.active {
   background: #f8f9fa;
 }
+
+/* 會員專區 我的點數頁面 */
+/* A-myPoint.html */
+.myPoint .table thead th {
+  font-weight: bold;
+  color: #454346;
+  text-align: center;
+  vertical-align: bottom;
+  border-bottom: 1px solid #dee2e6;
+}
+.myPoint .table td,
+.table th {
+  text-align: center;
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.myPoint .table tbody tr {
+  font-weight: 400;
+}
+
+
 
 /*購物車頁面*/
 /*nextStep*/
