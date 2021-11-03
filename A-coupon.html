@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <!-- bs4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+
+
+  <link rel="stylesheet" href="./css/site.css">
+  <!-- <link rel="stylesheet" href="./css/site.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/stylehelp.css">
+  <link rel="stylesheet" href="./css/index.css"> -->
+  <title>唯有機-D我的優惠券</title>
+
+
+</head>
+
+
+<body>
+  <div class="body-content container">
+    <!-- breadcrumb -->
+    <div class="row mb-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><i data-feather="home"></i><a href="#"></i>
+              唯有機</a></li>
+          <li class="breadcrumb-item active" aria-current="page">客服留言</li>
+        </ol>
+      </nav>
+    </div>
+    <section class="acountCenter">
+      <div class="row">
+        <!-- 選單列表 -->
+        <div class="col-md-2">
+          <!-- +手機版 -->
+          <section class="list d-block d-md-none mb-1">
+            <div id="userAccordion">
+              <div class="card border-0">
+                <div class="username border-bottom py-2 bg-light" id="headingOne">
+                  <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
+                    type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    李天天
+                    <i class="fas fa-angle-up"></i>
+                  </a>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#userAccordion">
+                  <div class="card-body p-0">
+                    <!-- 內層選單 -->
+                    <div class="accordion" id="categoryAccordion">
+                      <div class="card border-0">
+                        <div class="category border-bottom py-2 bg-light" id="headingOne">
+                          <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
+                            type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                            aria-controls="collapseTwo">
+                            會員專區
+                            <i class="fas fa-angle-up"></i>
+                          </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne"
+                          data-parent="#categoryAccordion">
+                          <div class="card-body">
+                            <ul class="list-unstyled pageSelect">
+                              <li class="py-2 subpage"><a href="#">會員專區</a></li>
+                              <li class="py-2 subpage"><a href="#">我的點數</a></li>
+                              <li class="py-2 subpage"><a href="#">點數兌換專區</a></li>
+                              <li class="py-2 subpage"><a href="#">會員制度說明</a></li>
+                              <li class="py-2 subpage"><a href="#">會員等級說明</a></li>
+                              <li class="py-2 subpage"><a href="#">會員個人資料</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="list-unstyled ">
+                      <li class="border-bottom p-2"><a href="#">訂單查詢</a></li>
+                      <li class="border-bottom p-2"><a href="#">收藏清單</a></li>
+                      <li class="border-bottom p-2"><a href="#">我的優惠券</a></li>
+                      <li class="border-bottom p-2"><a href="#">客服留言</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+          <!-- +桌機版 -->
+          <section class="list d-none d-md-block mb-1">
+            <div class="accordion" id="categoryAccordion">
+              <div class="card border-0">
+                <div class="category border-bottom py-2 page-y" id="headingOne">
+                  <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
+                    type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    會員專區
+                    <i class="fas fa-angle-up"></i>
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#categoryAccordion">
+                  <div class="card-body">
+                    <ul class="list-unstyled pageSelect">
+                      <li class="py-2 subpage "><a href="#">會員專區</a></li>
+                      <li class="py-2 subpage"><a href="#">我的點數</a></li>
+                      <li class="py-2 subpage"><a href="#">點數兌換專區</a></li>
+                      <li class="py-2 subpage"><a href="#">會員制度說明</a></li>
+                      <li class="py-2 subpage"><a href="#">會員等級說明</a></li>
+                      <li class="py-2 subpage"><a href="#">會員個人資料</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="list-unstyled">
+              <li class="border-bottom page-y p-2"><a href="#">訂單查詢</a></li>
+              <li class="border-bottom page-y p-2"><a href="#">收藏清單</a></li>
+              <li class="border-bottom page-y active p-2"><a href="#">我的優惠券</a></li>
+              <li class="border-bottom page-y p-2"><a href="#">客服留言</a></li>
+            </ul>
+          </section>
+        </div>
+        <!-- 主要內容 -->
+        <div class="col-md-10">
+          <section class="myCoupon">
+            <h3 class="header mb-3">我的優惠券</h3>
+            <!--tab title-->
+            <ul class="nav nav-tabs nav-bordered nav-fill flex-nowrap">
+              <li class="nav-item p-0">
+                <a href="#nav-item1" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                  <i class=" d-lg-none d-block mr-1"></i>
+                  <h4 class="d-block">領取優惠券</h4>
+                </a>
+              </li>
+              <li class="nav-item p-0">
+                <a href="#nav-item2" data-toggle="tab" aria-expanded="true" class="nav-link">
+                  <i class="d-lg-none d-block mr-1"></i>
+                  <h4 class="d-block">我的優惠券</h4>
+                </a>
+              </li>
+              <li class="nav-item p-0">
+                <a href="#nav-item3" data-toggle="tab" aria-expanded="true" class="nav-link">
+                  <i class="d-lg-none d-block mr-1"></i>
+                  <h4 class="d-block">優惠券記錄</h4>
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content py-5" id="nav-tabContent">
+              <!-- +領取優惠券 展開內容 -->
+              <div class="tab-pane fade show active" id="nav-item1" role="tabpanel" aria-labelledby="nav-item1">
+                <!-- 輸入折價券 -->
+                <div class="row">
+                  <div class="col-8">
+                    <div class="d-flex justify-content-between mb-4 mr-3">
+                      <input type="text" class="form-control" placeholder="輸入專屬券號" aria-label="coupon"
+                        aria-describedby="couponEnter" style="width: 60%;">
+                      <button class="btn btn-dark w-20" type="button" id="couponEnter" style="width: 35%;">領取</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 折價券卡片 -->
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-header border-bottom-0 bg-white d-flex justify-content-between">
+                        <span class="deco-outline-red">贈品券</span>
+                        <p class="mb-0 text-red">
+                          <i class="fas fa-exclamation-circle"></i>未領取
+                        </p>
+                      </div>
+                      <div class="card-body py-0">
+                        <h2>NT$700</h2>
+                        <p class="mb-0">APP / 官網使用</p>
+                        <p>歡迎來到鳶尾花田！$700感動升等禮</p>
+                        <p>購買可使用商品即可使用</p>
+                        <span class="text-red d-inline-block mb-2">兌換期限2021/12/31</span>
+                        <div class="text-left mb-3">
+                          <a href="#" class="btn btn-dark">前往領取</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-header border-bottom-0 bg-white d-flex justify-content-between">
+                        <span class="deco-outline-red">贈品券</span>
+                        <p class="mb-0 text-red">
+                          <i class="fas fa-exclamation-circle"></i>未領取
+                        </p>
+                      </div>
+                      <div class="card-body py-0">
+                        <h2>NT$700</h2>
+                        <p class="mb-0">APP / 官網使用</p>
+                        <p>歡迎來到鳶尾花田！$700感動升等禮</p>
+                        <p>購買可使用商品即可使用</p>
+                        <span class="text-red d-inline-block mb-2">兌換期限2021/12/31</span>
+                        <div class="text-left mb-3">
+                          <a href="#" class="btn btn-dark">前往領取</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-header border-bottom-0 bg-white d-flex justify-content-between">
+                        <span class="deco-outline-red">贈品券</span>
+                        <p class="mb-0">
+                          <i class="fas fa-check-circle mr-1"></i>已領取
+                        </p>
+                      </div>
+                      <div class="card-body py-0">
+                        <h2>NT$700</h2>
+                        <p class="mb-0">APP / 官網使用</p>
+                        <p>歡迎來到鳶尾花田！$700感動升等禮</p>
+                        <p>購買可使用商品即可使用</p>
+                        <span class="text-red d-inline-block mb-2">兌換期限2021/12/31</span>
+                        <div class="text-left mb-3">
+                          <a href="#" class="btn btn-dark">前往使用</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-header border-bottom-0 bg-white d-flex justify-content-between">
+                        <span class="deco-outline-red">贈品券</span>
+                        <p class="mb-0 text-disabled">
+                          <i class="fas fa-check-circle mr-1"></i>已使用
+                        </p>
+                      </div>
+                      <div class="card-body py-0">
+                        <h2>NT$700</h2>
+                        <p class="mb-0">APP / 官網使用</p>
+                        <p>歡迎來到鳶尾花田！$700感動升等禮</p>
+                        <p>購買可使用商品即可使用</p>
+                        <span class="text-red d-inline-block mb-2">兌換期限2021/12/31</span>
+                        <div class="text-left mb-3">
+                          <a href="#" class="btn btn-disabled">前往使用</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-header border-bottom-0 bg-white d-flex justify-content-between">
+                        <span class="deco-outline-red">贈品券</span>
+                        <p class="mb-0 text-disabled">
+                          <i class="fas fa-check-circle mr-1"></i>已使用
+                        </p>
+                      </div>
+                      <div class="card-body py-0">
+                        <h2>NT$700</h2>
+                        <p class="mb-0">APP / 官網使用</p>
+                        <p>歡迎來到鳶尾花田！$700感動升等禮</p>
+                        <p>購買可使用商品即可使用</p>
+                        <span class="text-red d-inline-block mb-2">兌換期限2021/12/31</span>
+                        <div class="text-left mb-3">
+                          <a href="#" class="btn btn-disabled">前往使用</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <a href="#" class="btn btn-dark" style="width: 65%;">領取更多優惠券</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- +我的優惠券 展開內容 -->
+              <div class="tab-pane fade" id="nav-item2" role="tabpanel" aria-labelledby="nav-item2">
+                <!-- 輸入折價券 -->
+                <div class="row">
+                  <div class="col-8">
+                    <div class="d-flex justify-content-between mb-4 mr-3">
+                      <input type="text" class="form-control" placeholder="輸入專屬券號" aria-label="coupon"
+                        aria-describedby="couponEnter" style="width: 60%;">
+                      <button class="btn btn-dark w-20" type="button" id="couponEnter" style="width: 35%;">領取</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 折價券卡片 -->
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-header border-bottom-0 bg-white d-flex justify-content-between">
+                        <span class="deco-outline-red">贈品券</span>
+                        <p class="mb-0">
+                          <i class="fas fa-check-circle mr-1"></i>已領取
+                        </p>
+                      </div>
+                      <div class="card-body py-0">
+                        <h2>NT$700</h2>
+                        <p class="mb-0">APP / 官網使用</p>
+                        <p>歡迎來到鳶尾花田！$700感動升等禮</p>
+                        <p>購買可使用商品即可使用</p>
+                        <span class="text-red d-inline-block mb-2">兌換期限2021/12/31</span>
+                        <div class="text-left mb-3">
+                          <a href="#" class="btn btn-dark">前往使用</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-header border-bottom-0 bg-white d-flex justify-content-between">
+                        <span class="deco-outline-red">贈品券</span>
+                        <p class="mb-0">
+                          <i class="fas fa-check-circle mr-1"></i>已領取
+                        </p>
+                      </div>
+                      <div class="card-body py-0">
+                        <h2>NT$700</h2>
+                        <p class="mb-0">APP / 官網使用</p>
+                        <p>歡迎來到鳶尾花田！$700感動升等禮</p>
+                        <p>購買可使用商品即可使用</p>
+                        <span class="text-red d-inline-block mb-2">兌換期限2021/12/31</span>
+                        <div class="text-left mb-3">
+                          <a href="#" class="btn btn-dark">前往使用</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-header border-bottom-0 bg-white d-flex justify-content-between">
+                        <span class="deco-outline-red">贈品券</span>
+                        <p class="mb-0">
+                          <i class="fas fa-check-circle mr-1"></i>已領取
+                        </p>
+                      </div>
+                      <div class="card-body py-0">
+                        <h2>NT$700</h2>
+                        <p class="mb-0">APP / 官網使用</p>
+                        <p>歡迎來到鳶尾花田！$700感動升等禮</p>
+                        <p>購買可使用商品即可使用</p>
+                        <span class="text-red d-inline-block mb-2">兌換期限2021/12/31</span>
+                        <div class="text-left mb-3">
+                          <a href="#" class="btn btn-dark">前往使用</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-header border-bottom-0 bg-white d-flex justify-content-between">
+                        <span class="deco-outline-red">贈品券</span>
+                        <p class="mb-0">
+                          <i class="fas fa-check-circle mr-1"></i>已領取
+                        </p>
+                      </div>
+                      <div class="card-body py-0">
+                        <h2>NT$700</h2>
+                        <p class="mb-0">APP / 官網使用</p>
+                        <p>歡迎來到鳶尾花田！$700感動升等禮</p>
+                        <p>購買可使用商品即可使用</p>
+                        <span class="text-red d-inline-block mb-2">兌換期限2021/12/31</span>
+                        <div class="text-left mb-3">
+                          <a href="#" class="btn btn-dark">前往使用</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-header border-bottom-0 bg-white d-flex justify-content-between">
+                        <span class="deco-outline-red">贈品券</span>
+                        <p class="mb-0">
+                          <i class="fas fa-check-circle mr-1"></i>已領取
+                        </p>
+                      </div>
+                      <div class="card-body py-0">
+                        <h2>NT$700</h2>
+                        <p class="mb-0">APP / 官網使用</p>
+                        <p>歡迎來到鳶尾花田！$700感動升等禮</p>
+                        <p>購買可使用商品即可使用</p>
+                        <span class="text-red d-inline-block mb-2">兌換期限2021/12/31</span>
+                        <div class="text-left mb-3">
+                          <a href="#" class="btn btn-dark">前往使用</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <a href="#" class="btn btn-dark" style="width: 65%;">領取更多優惠券</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- +優惠券記錄 展開內容 -->
+              <div class="tab-pane fade" id="nav-item3" role="tabpanel" aria-labelledby="nav-item3">
+                <div class="p-5">
+                  <img src="./img/index/coupon-emptystate.png" alt="沒有資料時顯示的圖片" title="沒有優惠券"
+                    class="mx-auto mb-3 d-block">
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-dark" style="width: 65%;">領取更多優惠券</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slick.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.subpage').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+      });
+      $('.page-y').click(function () {
+        $(this).addClass('active').siblings().removeClass('active')
+      })
+    });
+  </script>
+</body>
+
+</html>

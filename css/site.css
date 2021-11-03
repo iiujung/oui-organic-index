@@ -19,6 +19,9 @@
 .text-red {
     color: #d96b6b;
 }
+.text-disabled {
+    color: #A7A7A7;
+}
 
 .title--deco {
     border-bottom: 1px solid #222;
