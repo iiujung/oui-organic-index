@@ -1154,8 +1154,9 @@ M-loginPassword.html
 M-login.html
 --------  */
 /* form style*/
-.register .sex .form-check,.register .child .form-check {
-    width: 35%;
+.register .sex .form-check,
+.register .child .form-check {
+  width: 35%;
 }
 .register input[type="tel"]:disabled {
   color: #343a40;
@@ -1253,6 +1254,26 @@ A-levelinfo.html
 
 .custom-dot li {
   list-style-image: url(../img/index/icon-leaf.png);
+}
+
+/* 會員專區:客服留言
+A-customerService.html
+*/
+.customService .form-control {
+  color: #a7a7a7;
+  border: 1px solid #b1b1b1;
+  border-radius: 0rem;
+}
+.customService textarea {
+  padding: 8px;
+  color: #a7a7a7;
+  border: 1px solid #b1b1b1;
+  border-radius: 0.5rem;
+  max-width: 750px;
+}
+
+.page-y.active {
+  background: #f8f9fa;
 }
 
 /*購物車頁面*/
