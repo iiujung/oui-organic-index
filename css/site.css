@@ -33,6 +33,13 @@
     text-underline-offset: 8px;
 }
 
+/* 灰色間隔線 */
+.deco-line {
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 1rem;
+}
+
+
 .icon--y {
     width: 36px;
     height: 36px;
@@ -68,11 +75,6 @@
   padding: 80px 24px;
 }
 
-/* 灰色間隔線 */
-.deco-line {
-    border-bottom: 1px solid #d5d5d5;
-    padding-bottom: 1rem;
-}
 
 /* accordion up/down */
 .fa-angle-up {
