@@ -61,6 +61,10 @@
     padding: 30px;
 }
 
+.p-200 {
+  padding: 80px 24px;
+}
+
 /* 灰色間隔線 */
 .deco-line {
     border-bottom: 1px solid #d5d5d5;
@@ -95,6 +99,10 @@
 /* btn:hover */
 a:hover .btn-outline-darks {
     background-color: #454346;
+}
+
+section .btn-outborder-dark {
+  border: 1px solid #454346;
 }
 
 /* hover product img show */
@@ -2813,137 +2821,6 @@ t .cart-items .thirdPart>div>div:last-child {
     font-weight: 500;
     width: 40%;
 }
-}
-
-t .cart-items .thirdPart>div>div:last-child {
-    font-size: 14px;
-}
-
-/*additionArea*/
-.productArea>.additionArea .addition-slider {
-    padding-left: 15px;
-    padding-right: 15px
-}
-
-/*.order-summary*/
-.cart-list .order-summary table {
-    border-bottom: 1px solid #D5D5D5;
-}
-
-.cart-list .order-summary table tr td {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-}
-
-
-/*coupon-form 使用您的優惠券*/
-.coupon-form.discount form {
-    display: flex;
-    justify-content: space-between;
-}
-
-.coupon-form.discount form>div {
-    width: 75%;
-}
-
-.coupon-form.discount form input {
-    height: 44px;
-    width: 100%;
-    margin-top: 8px;
-}
-
-.coupon-form.discount form button {
-    height: unset;
-    width: 25%;
-    padding: unset;
-}
-
-.coupon-form .couponCardGroup {
-    padding: 12px 15px;
-    margin-left: -20px;
-    margin-right: -20px;
-}
-
-/*step2*/
-.productArea.step2 .nextStep {
-    justify-content: flex-start;
-}
-
-.productArea.step2 .nextStep .btn {
-    width: 92%;
-}
-
-.cart-list .productArea.step2 {
-    width: 92%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.productArea.step2 .option {
-    width: 100%;
-}
-
-.productArea.step2 input {
-    width: 100%;
-}
-
-.cartList.step2 .cartItem {
-    border-bottom: unset;
-    margin-top: 25px;
-    padding-bottom: 12px;
-}
-
-.cartList.step2 .cartItem>div {
-    display: flex;
-}
-
-.cartList.step2 .cartItem>div:nth-child(0n+3) {
-    width: 100%;
-    margin-top: 8px;
-}
-
-/*step3*/
-.productArea.step3 {
-    padding: 0 20px;
-}
-
-.productArea.step3>div>h3+div>div>h5 {
-    padding-left: 1rem;
-}
-
-.productArea.step3 .cartList.production {
-    border-bottom: 1px solid;
-}
-
-.productArea.step3 .cartList .cartItem {
-    border-bottom: unset;
-}
-
-.productArea.step3 .cartList .product-image {
-    width: 25%;
-}
-
-.nextStep.step3 button {
-    width: 80%;
-}
-
-/* ====================== 會員專區 ====================== */
-/* ===== 訂單查詢 ===== */
-.orderSearch .orderList-item {
-    border-bottom: 1px solid #D5D5D5;
-    margin-bottom: 1rem;
-}
-
-.orderSearch .orderList-item>div {
-    display: flex;
-    align-items: center;
-}
-
-.orderSearch .orderList-item>div>div.title {
-    font-weight: 500;
-    width: 40%;
-}
-}
 
 t .cart-items .thirdPart>div>div:last-child {
     font-size: 14px;
@@ -3074,4 +2951,131 @@ t .cart-items .thirdPart>div>div:last-child {
     width: 40%;
 }
 
+t .cart-items .thirdPart>div>div:last-child {
+    font-size: 14px;
+}
+
+/*additionArea*/
+.productArea>.additionArea .addition-slider {
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+/*.order-summary*/
+.cart-list .order-summary table {
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.cart-list .order-summary table tr td {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+
+/*coupon-form 使用您的優惠券*/
+.coupon-form.discount form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coupon-form.discount form>div {
+    width: 75%;
+}
+
+.coupon-form.discount form input {
+    height: 44px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.coupon-form.discount form button {
+    height: unset;
+    width: 25%;
+    padding: unset;
+}
+
+.coupon-form .couponCardGroup {
+    padding: 12px 15px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+/*step2*/
+.productArea.step2 .nextStep {
+    justify-content: flex-start;
+}
+
+.productArea.step2 .nextStep .btn {
+    width: 92%;
+}
+
+.cart-list .productArea.step2 {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productArea.step2 .option {
+    width: 100%;
+}
+
+.productArea.step2 input {
+    width: 100%;
+}
+
+.cartList.step2 .cartItem {
+    border-bottom: unset;
+    margin-top: 25px;
+    padding-bottom: 12px;
+}
+
+.cartList.step2 .cartItem>div {
+    display: flex;
+}
+
+.cartList.step2 .cartItem>div:nth-child(0n+3) {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/*step3*/
+.productArea.step3 {
+    padding: 0 20px;
+}
+
+.productArea.step3>div>h3+div>div>h5 {
+    padding-left: 1rem;
+}
+
+.productArea.step3 .cartList.production {
+    border-bottom: 1px solid;
+}
+
+.productArea.step3 .cartList .cartItem {
+    border-bottom: unset;
+}
+
+.productArea.step3 .cartList .product-image {
+    width: 25%;
+}
+
+.nextStep.step3 button {
+    width: 80%;
+}
+
+/* ====================== 會員專區 ====================== */
+/* ===== 訂單查詢 ===== */
+.orderSearch .orderList-item {
+    border-bottom: 1px solid #D5D5D5;
+    margin-bottom: 1rem;
+}
+
+.orderSearch .orderList-item>div {
+    display: flex;
+    align-items: center;
+}
+
+.orderSearch .orderList-item>div>div.title {
+    font-weight: 500;
+    width: 40%;
 }
