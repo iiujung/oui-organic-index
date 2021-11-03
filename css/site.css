@@ -19,6 +19,7 @@
 .text-red {
     color: #d96b6b;
 }
+
 .text-disabled {
     color: #A7A7A7;
 }
@@ -72,7 +73,7 @@
 }
 
 .p-200 {
-  padding: 80px 24px;
+    padding: 80px 24px;
 }
 
 
@@ -107,7 +108,7 @@ a:hover .btn-outline-darks {
 }
 
 section .btn-outborder-dark {
-  border: 1px solid #454346;
+    border: 1px solid #454346;
 }
 
 /* hover product img show */
@@ -141,7 +142,7 @@ button:focus {
 }
 
 .btn {
-    border: 1px;
+    border: 1px solid #454346;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2282,6 +2283,261 @@ A-customerService.html
     color: #454346;
 }
 
+/* ======================== 訂單明細頁 order-detail start ======================== */
+.orderDetail .message-square {
+    position: absolute;
+    top: .5rem;
+    right: .2rem;
+}
+
+.orderDetail>div>div.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.orderDetail>div>div.title h4 {
+    color: #707070;
+    font-weight: 400;
+}
+
+/* 訂單日期 */
+.orderDetail .order_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding: .2rem 2.5rem;
+}
+
+.orderDetail .order_head h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.orderDetail .order_head h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+/* orderStep */
+.orderDetail .orderStep {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.orderDetail .orderDetailStepItem {
+    width: 15px;
+    height: 15px;
+    color: #707070;
+    background-color: #D5D5D5;
+    border: #D5D5D5 solid 1px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.orderDetail .orderDetailStepItem>span {
+    white-space: nowrap;
+    position: absolute;
+    bottom: -40px;
+    left: -17px;
+}
+
+.orderDetail .orderDetailStepItem:first-child>span {
+    left: -35px;
+}
+
+.orderDetail .orderDetailStepLine {
+    height: 0px;
+    flex-grow: 1;
+    border: #EEEEEE solid 1px;
+}
+
+.orderDetail .orderDetailStepLine.finished {
+    border: #A7A7A7 solid 1px;
+}
+
+.orderDetail .orderDetailStepItem.finished {
+    background-color: #454346;
+    border: #454346 solid 1px;
+}
+
+.orderDetail .orderDetailStepItem.active {
+    background-color: #454346;
+    border: #454346 solid 1px;
+}
+
+/* 子標題 */
+.orderDetail .subtitle {
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #707070;
+    background-color: #EEEEEE;
+    height: 54px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.orderDetail .order-list,
+.orderDetail .oreder-content {
+    padding: 30px 1.5rem;
+}
+
+.orderDetail .oreder-content>div {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.orderDetail .order-data {
+    width: 85%;
+}
+
+.orderDetail .order-data>div {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.orderDetail .order-data>div:last-child {
+    margin-bottom: unset;
+}
+
+.orderDetail .order-data>div>span:first-child {
+    width: 15%;
+}
+
+/* 商品明細 */
+.orderDetail .order-list .order-list_title {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.orderDetail .order-list .order-list_item {
+    padding: 1rem 0px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.orderDetail .order-list .order-list_title>.product_img,
+.orderDetail .order-list .order-list_item>div>.product_img {
+    text-align: center;
+    width: 15%;
+}
+
+.orderDetail .order-list .order-list_item>div>.product_img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.orderDetail .order-list .order-list_item>div>.product_img div {
+    font-size: 13px;
+    width: 28px;
+    height: 24px;
+    border: 1px solid #D96B6B;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderDetail .order-list .order-list_title>.product_dec,
+.orderDetail .order-list .order-list_item>div>.product_dec {
+    display: flex;
+    flex-grow: 1;
+}
+
+.orderDetail .order-list .order-list_title>.product_dec>.product_dec_name {
+    text-align: center;
+    width: 40%;
+}
+
+.orderDetail .order-list .order-list_item>div>.product_dec>.product_dec_name {
+    text-align: left;
+    width: 40%;
+}
+
+.orderDetail .order-list .order-list_item>div>.product_dec>.product_dec_name {
+    display: flex;
+}
+
+.orderDetail .order-list .order-list_item>div>.product_dec>.product_dec_name>div:last-child {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.orderDetail .order-list .order-list_item>div>.product_dec>.product_dec_name>div:last-child>h3 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.orderDetail .order-list .order-list_item>div>.product_dec>.product_dec_name>div:last-child>p {
+    font-size: 16px;
+    color: #B5B5B6;
+}
+
+.orderDetail .order-list .product_dec>.product_dec_snapshot,
+.orderDetail .order-list .product_dec>.product_dec_num,
+.orderDetail .order-list .product_dec>.product_dec_discount,
+.orderDetail .order-list .product_dec>.product_dec_amount {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 折扣明細 */
+.orderDetail .order-discount-detail .oreder-content>div>span:first-child {
+    width: 15%;
+}
+
+/* 總額 */
+.orderDetail .order-total {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.orderDetail .order-total .text-red {
+    font-size: 28px;
+}
+
+.orderDetail .order-total>div {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* 按鈕 */
+.orderDetail .btn {
+    height: 52px;
+}
+
+.orderDetail .btn:hover {
+    background-color: #45434633;
+}
+
+/* ======================== 訂單明細頁 order-detail end ======================== */
+
 /* RWD */
 @media only screen and (min-width: 1681px) and (max-width: 1920px) {}
 
@@ -2305,9 +2561,17 @@ A-customerService.html
         margin-right: 8px;
         padding: 8px 48px;
     }
+
+    .m_version {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 991px) {
+    .pc_version {
+        display: none !important;
+    }
+
     .logo {
         text-align: center;
     }
@@ -2323,6 +2587,94 @@ A-customerService.html
     .main-nav {
         min-height: 40px;
     }
+
+    /* ======================== 訂單明細頁 order-detail start ======================== */
+
+    .orderDetail>div>div.title {
+        padding: .5rem 0;
+    }
+
+    /* 訂單日期 */
+    .orderDetail .order_head {
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: .2rem 1.5rem;
+    }
+
+    .orderDetail .order_head>div:first-child {
+        margin-bottom: 10px;
+    }
+
+    .orderDetail .order_head>div>span:first-child,
+    .orderDetail .order_head>div>h3:first-child {
+        margin-right: 25px;
+    }
+
+    /* 子標題 */
+    .orderDetail .subtitle {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .orderDetail .order-data {
+        width: 100%;
+    }
+
+    /* 商品明細 */
+    .orderDetail .order-list .order-list_title>.product_img,
+    .orderDetail .order-list .order-list_item>div>.product_img {
+        width: 20%;
+    }
+
+    .orderDetail .order-list .order-list_item>div>.product_dec {
+        flex-flow: column;
+    }
+
+    .orderDetail .order-list .order-list_item>div>.product_dec>.product_dec_name {
+        width: 100%;
+    }
+
+    .orderDetail .order-list .order-list_item>div>.product_dec>.product_dec_name h3 {
+        width: 80%;
+    }
+
+    .orderDetail .order-list .order-list_item>div>.product_dec>.product_dec_name p {
+        white-space: nowrap;
+    }
+
+    .orderDetail .order-list .product_dec>.product_dec_num,
+    .orderDetail .order-list .product_dec>.product_dec_discount,
+    .orderDetail .order-list .product_dec>.product_dec_amount {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: .5rem;
+    }
+
+    .orderDetail .order-list .product_dec {
+        position: relative;
+    }
+
+    .orderDetail .order-list .product_dec>.product_dec_snapshot {
+        width: 0px;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+    }
+
+    /* 折扣明細 */
+    .orderDetail .order-discount-detail .oreder-content>div>span:first-child {
+        width: 25%;
+    }
+
+    /* 總額 */
+
+    .orderDetail .order-total>div {
+        width: 45%;
+    }
+
+    /* ======================== 訂單明細頁 order-detail end ======================== */
 }
 
 @media only screen and (min-width: 768px) {
@@ -2385,12 +2737,6 @@ A-customerService.html
     }
 }
 
-@media only screen and (min-width: 576px) {
-    .m_version {
-        display: none !important;
-    }
-}
-
 @media only screen and (max-width: 575px) {
 
     /* style.css */
@@ -2428,9 +2774,7 @@ A-customerService.html
         padding-right: unset;
     }
 
-    .pc_version {
-        display: none !important;
-    }
+
 
     /*購物車頁面*/
     /*nextStep*/
@@ -2696,391 +3040,49 @@ A-customerService.html
         font-weight: 500;
         width: 40%;
     }
-}
 
-t .cart-items .thirdPart>div>div:last-child {
-    font-size: 14px;
-}
-
-/*additionArea*/
-.productArea>.additionArea .addition-slider {
-    padding-left: 15px;
-    padding-right: 15px
-}
-
-/*.order-summary*/
-.cart-list .order-summary table {
-    border-bottom: 1px solid #D5D5D5;
-}
-
-.cart-list .order-summary table tr td {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-}
-
-
-/*coupon-form 使用您的優惠券*/
-.coupon-form.discount form {
-    display: flex;
-    justify-content: space-between;
-}
-
-.coupon-form.discount form>div {
-    width: 75%;
-}
-
-.coupon-form.discount form input {
-    height: 44px;
-    width: 100%;
-    margin-top: 8px;
-}
-
-.coupon-form.discount form button {
-    height: unset;
-    width: 25%;
-    padding: unset;
-}
-
-.coupon-form .couponCardGroup {
-    padding: 12px 15px;
-    margin-left: -20px;
-    margin-right: -20px;
-}
-
-/*step2*/
-.productArea.step2 .nextStep {
-    justify-content: flex-start;
-}
-
-.productArea.step2 .nextStep .btn {
-    width: 92%;
-}
-
-.cart-list .productArea.step2 {
-    width: 92%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.productArea.step2 .option {
-    width: 100%;
-}
-
-.productArea.step2 input {
-    width: 100%;
-}
-
-.cartList.step2 .cartItem {
-    border-bottom: unset;
-    margin-top: 25px;
-    padding-bottom: 12px;
-}
-
-.cartList.step2 .cartItem>div {
-    display: flex;
-}
-
-.cartList.step2 .cartItem>div:nth-child(0n+3) {
-    width: 100%;
-    margin-top: 8px;
-}
-
-/*step3*/
-.productArea.step3 {
-    padding: 0 20px;
-}
-
-.productArea.step3>div>h3+div>div>h5 {
-    padding-left: 1rem;
-}
-
-.productArea.step3 .cartList.production {
-    border-bottom: 1px solid;
-}
-
-.productArea.step3 .cartList .cartItem {
-    border-bottom: unset;
-}
-
-.productArea.step3 .cartList .product-image {
-    width: 25%;
-}
-
-.nextStep.step3 button {
-    width: 80%;
-}
-
-/* ====================== 會員專區 ====================== */
-/* ===== 訂單查詢 ===== */
-.orderSearch .orderList-item {
-    border-bottom: 1px solid #D5D5D5;
-    margin-bottom: 1rem;
-}
-
-.orderSearch .orderList-item>div {
-    display: flex;
-    align-items: center;
-}
-
-.orderSearch .orderList-item>div>div.title {
-    font-weight: 500;
-    width: 40%;
-}
-
-t .cart-items .thirdPart>div>div:last-child {
-    font-size: 14px;
-}
-
-/*additionArea*/
-.productArea>.additionArea .addition-slider {
-    padding-left: 15px;
-    padding-right: 15px
-}
-
-/*.order-summary*/
-.cart-list .order-summary table {
-    border-bottom: 1px solid #D5D5D5;
-}
-
-.cart-list .order-summary table tr td {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-}
-
-
-/*coupon-form 使用您的優惠券*/
-.coupon-form.discount form {
-    display: flex;
-    justify-content: space-between;
-}
-
-.coupon-form.discount form>div {
-    width: 75%;
-}
-
-.coupon-form.discount form input {
-    height: 44px;
-    width: 100%;
-    margin-top: 8px;
-}
-
-.coupon-form.discount form button {
-    height: unset;
-    width: 25%;
-    padding: unset;
-}
-
-.coupon-form .couponCardGroup {
-    padding: 12px 15px;
-    margin-left: -20px;
-    margin-right: -20px;
-}
-
-/*step2*/
-.productArea.step2 .nextStep {
-    justify-content: flex-start;
-}
-
-.productArea.step2 .nextStep .btn {
-    width: 92%;
-}
-
-.cart-list .productArea.step2 {
-    width: 92%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.productArea.step2 .option {
-    width: 100%;
-}
-
-.productArea.step2 input {
-    width: 100%;
-}
-
-.cartList.step2 .cartItem {
-    border-bottom: unset;
-    margin-top: 25px;
-    padding-bottom: 12px;
-}
-
-.cartList.step2 .cartItem>div {
-    display: flex;
-}
-
-.cartList.step2 .cartItem>div:nth-child(0n+3) {
-    width: 100%;
-    margin-top: 8px;
-}
-
-/*step3*/
-.productArea.step3 {
-    padding: 0 20px;
-}
-
-.productArea.step3>div>h3+div>div>h5 {
-    padding-left: 1rem;
-}
-
-.productArea.step3 .cartList.production {
-    border-bottom: 1px solid;
-}
-
-.productArea.step3 .cartList .cartItem {
-    border-bottom: unset;
-}
-
-.productArea.step3 .cartList .product-image {
-    width: 25%;
-}
-
-.nextStep.step3 button {
-    width: 80%;
-}
-
-/* ====================== 會員專區 ====================== */
-/* ===== 訂單查詢 ===== */
-.orderSearch .orderList-item {
-    border-bottom: 1px solid #D5D5D5;
-    margin-bottom: 1rem;
-}
-
-.orderSearch .orderList-item>div {
-    display: flex;
-    align-items: center;
-}
-
-.orderSearch .orderList-item>div>div.title {
-    font-weight: 500;
-    width: 40%;
-}
-
-t .cart-items .thirdPart>div>div:last-child {
-    font-size: 14px;
-}
-
-/*additionArea*/
-.productArea>.additionArea .addition-slider {
-    padding-left: 15px;
-    padding-right: 15px
-}
-
-/*.order-summary*/
-.cart-list .order-summary table {
-    border-bottom: 1px solid #D5D5D5;
-}
-
-.cart-list .order-summary table tr td {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-}
-
-
-/*coupon-form 使用您的優惠券*/
-.coupon-form.discount form {
-    display: flex;
-    justify-content: space-between;
-}
-
-.coupon-form.discount form>div {
-    width: 75%;
-}
-
-.coupon-form.discount form input {
-    height: 44px;
-    width: 100%;
-    margin-top: 8px;
-}
-
-.coupon-form.discount form button {
-    height: unset;
-    width: 25%;
-    padding: unset;
-}
-
-.coupon-form .couponCardGroup {
-    padding: 12px 15px;
-    margin-left: -20px;
-    margin-right: -20px;
-}
-
-/*step2*/
-.productArea.step2 .nextStep {
-    justify-content: flex-start;
-}
-
-.productArea.step2 .nextStep .btn {
-    width: 92%;
-}
-
-.cart-list .productArea.step2 {
-    width: 92%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.productArea.step2 .option {
-    width: 100%;
-}
-
-.productArea.step2 input {
-    width: 100%;
-}
-
-.cartList.step2 .cartItem {
-    border-bottom: unset;
-    margin-top: 25px;
-    padding-bottom: 12px;
-}
-
-.cartList.step2 .cartItem>div {
-    display: flex;
-}
-
-.cartList.step2 .cartItem>div:nth-child(0n+3) {
-    width: 100%;
-    margin-top: 8px;
-}
-
-/*step3*/
-.productArea.step3 {
-    padding: 0 20px;
-}
-
-.productArea.step3>div>h3+div>div>h5 {
-    padding-left: 1rem;
-}
-
-.productArea.step3 .cartList.production {
-    border-bottom: 1px solid;
-}
-
-.productArea.step3 .cartList .cartItem {
-    border-bottom: unset;
-}
-
-.productArea.step3 .cartList .product-image {
-    width: 25%;
-}
-
-.nextStep.step3 button {
-    width: 80%;
-}
-
-/* ====================== 會員專區 ====================== */
-/* ===== 訂單查詢 ===== */
-.orderSearch .orderList-item {
-    border-bottom: 1px solid #D5D5D5;
-    margin-bottom: 1rem;
-}
-
-.orderSearch .orderList-item>div {
-    display: flex;
-    align-items: center;
-}
-
-.orderSearch .orderList-item>div>div.title {
-    font-weight: 500;
-    width: 40%;
+    /* ======================== 訂單明細頁 order-detail start ======================== */
+    .orderDetail>div>div.title {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    /* 子標題 */
+    .orderDetail .subtitle {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    /* 訂單日期 */
+    .orderDetail .order_head {
+        padding: .2rem 0rem;
+    }
+
+    .orderDetail .order-data>div>span:first-child {
+        min-width: 25%;
+    }
+
+    /* 商品明細 */
+    .orderDetail .order-list .order-list_title>.product_img,
+    .orderDetail .order-list .order-list_item>div>.product_img {
+        width: 30%;
+    }
+
+    /* 折扣明細 */
+    .orderDetail .order-total {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .orderDetail .order-discount-detail .oreder-content>div>span:first-child {
+        width: 40%;
+    }
+
+    /* 總額 */
+
+    .orderDetail .order-total>div {
+        width: 60%;
+    }
+
+    /* ======================== 訂單明細頁 order-detail end ======================== */
 }
