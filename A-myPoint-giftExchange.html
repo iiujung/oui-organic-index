@@ -167,52 +167,51 @@
             <!-- 可兌換商品 商品清單 -->
             <div class="row mb-5">
               <div class="col-md-4 col-6">
-                <img src="./img/index/product03.jpg" alt="" class="img-fluid">
+                <img src="./img/index/product03.jpg" alt="商品圖片" title="可兌換商品" class="img-fluid">
                 <span>APP / 官網使用</span>
                 <p class="text-muted">全護植萃臉部防曬乳SPF50 -無色**</p>
                 <p class="text-red">兌換期限2021/12/31</p>
-                <a href="#" class="btn btn-dark">3,000點兌換</a>
+                <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#confirmModal">3,000點兌換</a>
               </div>
               <div class="col-md-4 col-6">
-                <img src="./img/index/product03.jpg" alt="" class="img-fluid">
+                <img src="./img/index/product03.jpg" alt="商品圖片" title="可兌換商品" class="img-fluid">
                 <span>APP / 官網使用</span>
                 <p class="text-muted">全護植萃臉部防曬乳SPF50 -無色**</p>
                 <p class="text-red">兌換期限2021/12/31</p>
-                <a href="#" class="btn btn-dark">3,000點兌換</a>
+                <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#confirmModal">3,000點兌換</a>
               </div>
               <div class="col-md-4 col-6">
-                <img src="./img/index/product03.jpg" alt="" class="img-fluid">
+                <img src="./img/index/product03.jpg" alt="商品圖片" title="可兌換商品" class="img-fluid">
                 <span>APP / 官網使用</span>
                 <p class="text-muted">全護植萃臉部防曬乳SPF50 -無色**</p>
                 <p class="text-red">兌換期限2021/12/31</p>
-                <a href="#" class="btn btn-dark">3,000點兌換</a>
-                <!-- Vertically centered modal -->
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-                  modal 已成功兌換
-                </button>
-
-                <!-- Modal -->
+                <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#confirmModal">3,000點兌換</a>
+                <!-- 彈跳視窗模組 -->
+                <!-- ↳成功兌換Modal -->
                 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
                   aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">已成功兌換，可於購物車內確認</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        ...
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
-                      </div>
+                    <div class="modal-content text-center p-200">
+                        <h5 class="mb-3" id="staticBackdropLabel" >已成功兌換，可於購物車內確認</h5>
+                        <button type="button" class="btn btn-dark btn-block mb-1">前往購物車</button>
+                        <button type="button" class="btn btn-outborder-dark btn-block" data-dismiss="modal">繼續兌換</button>
                     </div>
                   </div>
                 </div>
+
+                <!-- ↳確定兌換Modal -->
+                <div class="modal fade" id="confirmModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                  aria-labelledby="confirmModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-center p-200">
+                        <h5 class="mb-3" id="confirmModalLabel" >您目前有4403點，您確定要使用3000點兌換嗎？</h5>
+                        <button type="button" class="btn btn-dark btn-block mb-1" data-toggle="modal" data-target="#staticBackdrop"  data-dismiss="modal">確認</button>
+                        <button type="button" class="btn btn-outborder-dark btn-block" data-dismiss="modal">取消</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 彈跳視窗模組 END -->
+
               </div>
             </div>
             <!-- 已兌換 -->
@@ -222,21 +221,21 @@
             <!-- 可兌換商品 商品清單 -->
             <div class="row">
               <div class="col-md-4 col-6">
-                <img src="./img/index/product03.jpg" alt="" class="img-fluid">
+                <img src="./img/index/product03.jpg" alt="商品圖片" title="已兌換商品" class="img-fluid">
                 <span>APP / 官網使用</span>
                 <p class="text-muted">全護植萃臉部防曬乳SPF50 -無色**</p>
                 <p class="text-red">兌換期限2021/12/31</p>
                 <a href="#" class="btn btn-disabled">3,000點兌換</a>
               </div>
               <div class="col-md-4 col-6">
-                <img src="./img/index/product03.jpg" alt="" class="img-fluid">
+                <img src="./img/index/product03.jpg" alt="商品圖片" title="已兌換商品" class="img-fluid">
                 <span>APP / 官網使用</span>
                 <p class="text-muted">全護植萃臉部防曬乳SPF50 -無色**</p>
                 <p class="text-red">兌換期限2021/12/31</p>
                 <a href="#" class="btn btn-disabled">3,000點兌換</a>
               </div>
               <div class="col-md-4 col-6">
-                <img src="./img/index/product03.jpg" alt="" class="img-fluid">
+                <img src="./img/index/product03.jpg" alt="商品圖片" title="已兌換商品" class="img-fluid">
                 <span>APP / 官網使用</span>
                 <p class="text-muted">全護植萃臉部防曬乳SPF50 -無色**</p>
                 <p class="text-red">兌換期限2021/12/31</p>
