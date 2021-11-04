@@ -80,6 +80,29 @@
     overflow: scroll;
 }
 
+/* btn css */
+.btn-dark {
+    background-color: #454346;
+    border-color: #454346;
+}
+
+.btn-dark:hover {
+    background-color: #666666;
+}
+
+.btn-white {
+    color: #454346;
+    background-color: #fff;
+    border-color: #454346;
+}
+
+.btn-white:hover {
+    background-color: #666666;
+    ;
+    color: #ffffff;
+}
+
+
 /* accordion up/down */
 .fa-angle-up {
     transition: all 0.3s ease;
@@ -105,7 +128,7 @@
     display: inline;
 }
 
-/* btn:hover */
+/* a:hover */
 a:hover .btn-outline-darks {
     background-color: #454346;
 }
@@ -547,10 +570,6 @@ footer li {
     text-decoration: none;
 }
 
-section .btn-dark {
-    background-color: #454346;
-    border-color: #454346;
-}
 
 section .btn-disabled {
     background-color: #A7A7A7;
@@ -2543,15 +2562,6 @@ A-customerService.html
     height: 52px;
 }
 
-.orderDetail .btn-white:hover {
-    background-color: #45434633;
-}
-
-.orderDetail .btn-dark:hover {
-    background-color: #EFEFEF;
-    color: #121112;
-}
-
 /* ======================== 訂單明細頁 order-detail end ======================== */
 
 /* ======================== 訂單取消頁 order-cancel start ======================== */
@@ -2709,6 +2719,8 @@ A-customerService.html
     height: 50px;
     margin-left: 1rem;
 }
+
+
 
 /* ======================== 訂單評論頁 end ======================== */
 
