@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <!-- bs4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+
+
+
+  <link rel="stylesheet" href="./css/site.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/stylehelp.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>訂單明細</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- breadcrumb -->
+    <div class="row mb-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><i data-feather="home"></i><a href="#"></i>
+              唯有機</a></li>
+          <li class="breadcrumb-item active" aria-current="page">訂單查詢</li>
+        </ol>
+      </nav>
+    </div>
+    <section class="acountCenter">
+      <div class="row">
+        <!-- 選單列表 -->
+        <div class="col-md-2">
+          <!-- +手機版 -->
+          <section class="list d-block d-md-none mb-4">
+            <div id="userAccordion">
+              <div class="card border-0">
+                <div class="username border-bottom py-2 bg-light" id="headingOne">
+                  <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
+                    type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    李天天
+                    <i class="fas fa-angle-up"></i>
+                  </a>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#userAccordion">
+                  <div class="card-body p-0">
+                    <!-- 內層選單 -->
+                    <div class="accordion" id="categoryAccordion">
+                      <div class="card border-0">
+                        <div class="category border-bottom py-2" id="headingOne">
+                          <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
+                            type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            會員專區
+                            <i class="fas fa-angle-up"></i>
+                          </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                          data-parent="#categoryAccordion">
+                          <div class="card-body">
+                            <ul class="list-unstyled pageSelect">
+                              <li class="py-2 subpage"><a href="#">會員專區</a></li>
+                              <li class="py-2 subpage"><a href="#">我的點數</a></li>
+                              <li class="py-2 subpage"><a href="#">點數兌換專區</a></li>
+                              <li class="py-2 subpage active"><a href="#">會員制度說明</a></li>
+                              <li class="py-2 subpage"><a href="#">會員等級說明</a></li>
+                              <li class="py-2 subpage"><a href="#">會員個人資料</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="list-unstyled">
+                      <li class="border-bottom p-2  bg-light"><a href="#">訂單查詢</a></li>
+                      <li class="border-bottom p-2"><a href="#">收藏清單</a></li>
+                      <li class="border-bottom p-2"><a href="#">我的優惠券</a></li>
+                      <li class="border-bottom p-2"><a href="#">客服留言</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+          <!-- +桌機版 -->
+          <section class="list d-none d-md-block mb-1">
+            <div class="accordion" id="categoryAccordion">
+              <div class="card border-0">
+                <div class="category border-bottom py-2" id="headingOne">
+                  <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
+                    type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    會員專區
+                    <i class="fas fa-angle-up"></i>
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                  data-parent="#categoryAccordion">
+                  <div class="card-body">
+                    <ul class="list-unstyled pageSelect">
+                      <li class="py-2 subpage"><a href="#">會員專區</a></li>
+                      <li class="py-2 subpage"><a href="#">我的點數</a></li>
+                      <li class="py-2 subpage"><a href="#">點數兌換專區</a></li>
+                      <li class="py-2 subpage"><a href="#">會員制度說明</a></li>
+                      <li class="py-2 subpage"><a href="#">會員等級說明</a></li>
+                      <li class="py-2 subpage"><a href="#">會員個人資料</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="list-unstyled">
+              <li class="border-bottom p-2 bg-light"><a href="#">訂單查詢</a></li>
+              <li class="border-bottom p-2"><a href="#">收藏清單</a></li>
+              <li class="border-bottom p-2"><a href="#">我的優惠券</a></li>
+              <li class="border-bottom p-2"><a href="#">客服留言</a></li>
+            </ul>
+          </section>
+        </div>
+        <!-- 主要內容 -->
+        <div class="col-md-10 order-comment">
+          <!-- 訂單明細 -->
+          <div class="mb-md-5 mb-3 px-md-4">
+            <div class="title">
+              <h3 class="font-weight-bold mr-3">訂單明細</h3>
+              <h4>| 購物車編號 <span class="ml-2">TG210721R01474</span></h4>
+            </div>
+            <a  class="message-square" href="">
+              <i data-feather="message-square" stroke-width="1"></i>
+            </a>
+          </div>
+
+          <div>
+            <div class="order-comment_title mx-md-3 px-lg-4 px-md-2 px-1 pb-md-1">
+              <h4>留下評價</h4>
+            </div>
+            <div class="order-comment-list">
+              <div class="order-comment-list_item">
+                <!-- 商品圖 -->
+                <div class="list-item_Img">
+                  <a href="">
+                    <img src="./img/index/product01.jpg" title=""  alt="product01"/>
+                  </a>
+                </div>
+                <!-- 評論內容 -->
+                <div class="list-item_desc mt-md-0 mt-3">
+                  <div class="list-item-desc_name py-lg-5 py-md-3">
+                    <h3>Acroelle 抗UV護髮精華噴霧**</h3>
+                    <span>(商品編號：TS210721S001651)</span>
+                  </div>
+                  <div class="list-item-desc_score">
+                    <h4>評價此商品</h4>
+                    <div class="ml-2">☆☆☆☆☆</div>
+                  </div>
+                  <div class="list-item-desc_content">
+                    <h4>評論內容</h4>
+                    <textarea type="text"></textarea>
+                  </div>
+                  <div class="list-item-desc_update">
+                    <div class="list-item-desc-update_btn">
+                      <div>
+                        <button class="btn btn-white">上傳圖片</button>
+                        <span>至多2張</span>
+                      </div>
+                      <div>
+                        <button class="btn btn-white">上傳影片</button>
+                        <span>至多1MB</span>
+                      </div>
+                    </div>
+                    <div class="list-item-desc-update_content">
+                      <div  class="list-item-desc-update-content_item">
+                        <div  class="list-item-desc-update-content-item_img">
+                          <a href="">
+                            <img class="w-100" src="./img/index/product01.jpg" title=""  alt="product01"/>
+                          </a>
+                        </div>
+                        <span class="mx-2">123.PNG</span>
+                        <a href="">
+                          <i data-feather="trash"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-item-desc_recommend">
+                    <h4>是否推薦此商品？</h4>
+                    <div class="d-flex">
+                      <button class="btn btn-white">是</button>
+                      <button class="btn btn-white">否</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-comment-list_item">
+                <!-- 商品圖 -->
+                <div class="list-item_Img">
+                  <a href="">
+                    <img src="./img/index/product01.jpg" title=""  alt="product01"/>
+                  </a>
+                </div>
+                <!-- 評論內容 -->
+                <div class="list-item_desc mt-md-0 mt-3">
+                  <div class="list-item-desc_name py-lg-5 py-md-3">
+                    <h3>Acroelle 抗UV護髮精華噴霧**</h3>
+                    <span>(商品編號：TS210721S001651)</span>
+                  </div>
+                  <div class="list-item-desc_score">
+                    <h4>評價此商品</h4>
+                    <div class="ml-2">☆☆☆☆☆</div>
+                  </div>
+                  <div class="list-item-desc_content">
+                    <h4>評論內容</h4>
+                    <textarea type="text"></textarea>
+                  </div>
+                  <div class="list-item-desc_update">
+                    <div class="list-item-desc-update_btn">
+                      <div>
+                        <button class="btn btn-white">上傳圖片</button>
+                        <span>至多2張</span>
+                      </div>
+                      <div>
+                        <button class="btn btn-white">上傳影片</button>
+                        <span>至多1MB</span>
+                      </div>
+                    </div>
+                    <div class="list-item-desc-update_content">
+                      <div  class="list-item-desc-update-content_item">
+                        <div  class="list-item-desc-update-content-item_img">
+                          <a href="">
+                            <img class="w-100" src="./img/index/product01.jpg" title=""  alt="product01"/>
+                          </a>
+                        </div>
+                        <span class="mx-2">123.PNG</span>
+                        <a href="">
+                          <i data-feather="trash"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-item-desc_recommend">
+                    <h4>是否推薦此商品？</h4>
+                    <div class="d-flex">
+                      <button class="btn btn-white">是</button>
+                      <button class="btn btn-white">否</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <!-- =================== 按鈕 =================== -->
+          <div class="px-md-4 mt-5">
+            <button class="btn btn-dark w-100 mt-3">送出</button>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slick.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+    <script>
+      $(document).ready(function () {
+        $('.subpage').click(function() {
+        $(this).addClass('active').siblings().removeClass('active');
+        });
+      });
+    </script>
+</body>
+
+</html>

@@ -2589,6 +2589,130 @@ A-customerService.html
 
 /* ======================== 訂單取消頁 order-cancel end ======================== */
 
+/* ======================== 訂單評論頁 start ======================== */
+/* Page title */
+.order-comment .message-square {
+    position: absolute;
+    top: .5rem;
+    right: .2rem;
+}
+
+.order-comment>div>div.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.order-comment>div>div.title h4 {
+    color: #707070;
+    font-weight: 400;
+}
+
+/* sectiontitle */
+.order-comment .order-comment_title {
+    border-bottom: 1px solid #707070;
+}
+
+.order-comment .order-comment_title h4 {
+    font-size: 20px;
+    color: #707070;
+}
+
+/* 評論區 */
+.order-comment-list_item {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+/* 商品圖 */
+.order-comment-list_item .list-item_Img {
+    width: 12rem;
+    margin: 0 auto;
+}
+
+.order-comment-list_item .list-item_Img img {
+    max-width: 100%;
+}
+
+/* 評論內容 */
+.order-comment-list_item .list-item_desc {
+    flex: 1;
+}
+
+.order-comment-list_item .list-item_desc>div {
+    margin-bottom: .8rem;
+}
+
+.order-comment-list_item .list-item_desc>div>h4 {
+    font-size: 16px;
+    color: #454346;
+    font-weight: 400;
+    margin-bottom: unset;
+}
+
+.order-comment-list_item .list-item_desc .list-item-desc_name {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.order-comment-list_item .list-item_desc .list-item-desc_name h3 {
+    font-size: 18px;
+    color: #454346;
+    font-weight: 400;
+}
+
+.order-comment-list_item .list-item_desc .list-item-desc_name span {
+    font-size: 16px;
+    color: #B5B5B6;
+    font-weight: 400;
+}
+
+.order-comment-list_item .list-item_desc .list-item-desc_score,
+.order-comment-list_item .list-item_desc .list-item-desc_recommend {
+    display: flex;
+    align-items: center;
+}
+
+.order-comment-list_item .list-item_desc .list-item-desc_content textarea {
+    border: 1px solid #B1B1B1;
+    min-height: 150px;
+    width: 100%;
+    max-width: 536px;
+    margin-top: .5rem;
+}
+
+.order-comment-list_item .list-item_desc .list-item-desc_update>div>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.order-comment-list_item .list-item_desc .list-item-desc_update>div>div>span {
+    color: #A7A7A7;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.order-comment-list_item .list-item_desc .list-item-desc_update .list-item-desc-update-content-item_img {
+    width: 10%;
+    min-width: 80px;
+    height: auto;
+}
+
+.order-comment-list_item .list-item_desc .list-item-desc_recommend button {
+    width: 80px;
+    height: 50px;
+    margin-left: 1rem;
+}
+
+/* ======================== 訂單評論頁 end ======================== */
+
+
 /* RWD */
 @media only screen and (min-width: 1681px) and (max-width: 1920px) {}
 
@@ -2726,6 +2850,13 @@ A-customerService.html
     }
 
     /* ======================== 訂單明細頁 order-detail end ======================== */
+
+    /* ======================== 訂單評論頁 start ======================== */
+    .order-comment>div>div.title {
+        padding: .5rem 0;
+    }
+
+    /* ======================== 訂單評論頁 end ======================== */
 }
 
 @media only screen and (min-width: 768px) {
@@ -3145,4 +3276,12 @@ A-customerService.html
     }
 
     /* ======================== 訂單明細頁 order-detail end ======================== */
+
+    /* ======================== 訂單評論頁 start ======================== */
+    .order-comment>div>div.title {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    /* ======================== 訂單評論頁 end ======================== */
 }
