@@ -157,6 +157,7 @@ select {
     border-radius: 5px;
     height: 52px;
     background-color: #fff;
+    padding-left: .5rem;
 }
 
 /* input css */
@@ -304,6 +305,11 @@ input[type="checkbox"] {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: unset;
 }
 
 /* 定位 */
@@ -2394,7 +2400,7 @@ A-customerService.html
 
 .orderDetail .order-list,
 .orderDetail .oreder-content {
-    padding: 30px 1.5rem;
+    padding: 15px 1.5rem;
 }
 
 .orderDetail .oreder-content>div {
@@ -2436,6 +2442,7 @@ A-customerService.html
 .orderDetail .order-list .order-list_item>div>.product_img {
     text-align: center;
     width: 15%;
+    padding-right: 10px;
 }
 
 .orderDetail .order-list .order-list_item>div>.product_img img {
@@ -2545,6 +2552,41 @@ A-customerService.html
 }
 
 /* ======================== 訂單明細頁 order-detail end ======================== */
+
+/* ======================== 訂單取消頁 order-cancel start ======================== */
+.orderDetail .order-cancel-tips h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.orderDetail .order-cancel-tips li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.orderDetail .order-cancel-result {
+    display: flex;
+    align-items: center;
+}
+
+.orderDetail .order-cancel-result h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #707070;
+    margin-right: 1rem;
+    margin-bottom: unset;
+}
+
+.orderDetail .order-cancel-result select {
+    font-size: 16px;
+    font-weight: 400;
+    color: #707070;
+    width: 50%;
+}
+
+/* ======================== 訂單取消頁 order-cancel end ======================== */
 
 /* RWD */
 @media only screen and (min-width: 1681px) and (max-width: 1920px) {}
@@ -2743,6 +2785,15 @@ A-customerService.html
         justify-content: flex-start;
         align-items: flex-start;
     }
+
+    /* ======================== 訂單取消頁 order-cancel start ======================== */
+
+    .orderDetail .order-cancel-result select {
+        width: unset;
+        flex: 1;
+    }
+
+    /* ======================== 訂單取消頁 order-cancel end ======================== */
 }
 
 @media only screen and (max-width: 575px) {
