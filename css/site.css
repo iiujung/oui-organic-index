@@ -2535,8 +2535,13 @@ A-customerService.html
     height: 52px;
 }
 
-.orderDetail .btn:hover {
+.orderDetail .btn-white:hover {
     background-color: #45434633;
+}
+
+.orderDetail .btn-dark:hover {
+    background-color: #EFEFEF;
+    color: #121112;
 }
 
 /* ======================== 訂單明細頁 order-detail end ======================== */

@@ -147,6 +147,9 @@
               <i data-feather="message-square" stroke-width="1"></i>
             </a>
           </div>
+
+          <!-- 待取消＆已完成 不顯示： 付款方式＆宅配方式 -->
+
           <!-- =================== 訂單進度 =================== -->
           <div class="mb-4">
             <div class="order_head">
@@ -384,8 +387,13 @@
 
           <!-- =================== 按鈕 =================== -->
           <div class="px-md-4">
-            <button class="btn btn-white w-100 my-3">取消訂單</button>
-            <button class="btn btn-white w-100">退換貨說明</button>
+            <!-- 已送達頁面 顯示: -->
+            <!-- <button class="btn btn-dark w-100 mt-3">留下評價</button> -->
+
+            <!-- 已送達＆已評價 顯示： -->
+            <!-- <button class="btn btn-dark w-100 mt-3">修改評價</button> -->
+            <button class="btn btn-dark w-100 mt-3">退換貨說明</button>
+            <button class="btn btn-white w-100 mt-3">取消訂單</button>
           </div>
           
         </div>
