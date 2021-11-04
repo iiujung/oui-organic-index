@@ -139,6 +139,7 @@ section .btn-outborder-dark {
     padding-bottom: 1rem;
 }
 
+textarea:focus,
 select:focus,
 button:focus {
     outline: unset;
