@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/stylehelp.css">
   <link rel="stylesheet" href="./css/index.css"> -->
-  <title>唯有機-會員專區：個人資料</title>
+  <title>唯有機-會員專區：編輯個人資料</title>
 
 
 </head>
@@ -146,10 +146,6 @@
             <div class="bg--light p-4 mb-4">
               <div class="d-md-flex justify-content-between mb-3">
                 <h3 class="font-weight-bold">會員個人資料</h3>
-                <div class="d-flex flex-column">
-                  <a href="#" class="alink-deco text-muted mb-3 editBtn">編輯個人資料</a>
-                  <a href="#" class="alink-deco text-muted">編輯問卷</a>
-                </div>
               </div>
               <div class="profileForm my-5 mx-auto" style="width: 90%;">
                 <form action="" method="">
@@ -166,7 +162,7 @@
                       <label for="email">電子信箱</label>
                     </div>
                     <div class="col-md-9">
-                      <input type="email" id="email" value="123@gmail.com" disabled>
+                      <input type="email" id="email" value="123@gmail.com">
                     </div>
                   </div>
                   <div class="form-group row">
@@ -174,7 +170,9 @@
                       <label for="password">密碼</label>
                     </div>
                     <div class="col-md-9">
-                      <input type="password" id="password" value="examplepassword" disabled>
+                      <input type="password" id="password" value="examplepassword" disabled> <br>
+                      <input type="text" id="password" placeholder="修改密碼" class="mb-2"> <br>
+                      <input type="text" id="password" placeholder="再次輸入密碼">
                     </div>
                   </div>
                   <div class="form-group row">
@@ -182,7 +180,7 @@
                       <label for="idname">姓名</label>
                     </div>
                     <div class="col-md-9">
-                      <input type="text" id="idname" value="李天天" disabled>
+                      <input type="text" id="idname" value="李天天">
                     </div>
                   </div>
                   <div class="form-group row">
@@ -190,7 +188,7 @@
                       <label for="birthday">生日</label>
                     </div>
                     <div class="col-md-9">
-                      <input type="date" id="birthday" value="1978-09-20" disabled>
+                      <input type="date" id="birthday" value="1978-09-20">
                     </div>
                   </div>
                   <div class="form-group row">
@@ -200,34 +198,45 @@
                     <div class="col-md-9 d-flex flex-column">
                       <div class="form-check-inline">
                         <label class="main form-check-label" for="subscribe-item01">
-                          <input class="form-check-input" type="checkbox" name="subscribe" id="subscribe-item01" value="活動" checked>
+                          <input class="form-check-input" type="checkbox" name="subscribe" id="subscribe-item01"
+                            value="活動" checked>
                           活動
                           <span class="style-checkbox--sm"></span>
                         </label>
                       </div>
                       <div class="form-check-inline">
                         <label class="main form-check-label" for="subscribe-item02">
-                          <input class="form-check-input" type="checkbox" name="subscribe" id="subscribe-item02" value="交易" checked>
+                          <input class="form-check-input" type="checkbox" name="subscribe" id="subscribe-item02"
+                            value="交易" checked>
                           交易
                           <span class="style-checkbox--sm"></span>
                         </label>
                       </div>
                       <div class="form-check-inline">
                         <label class="main form-check-label" for="subscribe-item03">
-                          <input class="form-check-input" type="checkbox" name="subscribe" id="subscribe-item03" value="客服回覆" checked>
+                          <input class="form-check-input" type="checkbox" name="subscribe" id="subscribe-item03"
+                            value="客服回覆" checked>
                           客服回覆
                           <span class="style-checkbox--sm"></span>
                         </label>
                       </div>
                       <div class="form-check-inline">
                         <label class="main form-check-label" for="subscribe-item04">
-                          <input class="form-check-input" type="checkbox" name="subscribe" id="subscribe-item04" value="會員優惠" checked>
+                          <input class="form-check-input" type="checkbox" name="subscribe" id="subscribe-item04"
+                            value="會員優惠" checked>
                           會員優惠
                           <span class="style-checkbox--sm"></span>
                         </label>
                       </div>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-md-9 offset-md-3 mr-0">
+                      <a href="" class="btn btn-dark mb-2">儲存變更</a>
+                      <a href="" class="btn btn-outborder-dark">取消</a>
+                    </div>
+                  </div>
+
                 </form>
               </div>
             </div>
@@ -274,8 +283,8 @@
               <div class="accordion" id="accordionProfile">
                 <div class="card border-0">
                   <div class="card-header bg--darkgray" id=" headingOne">
-                    <h4 class="mb-0 btn-nav-accordion" data-toggle="collapse" data-target="#collapseProfile" aria-expanded="true"
-                      aria-controls="collapseProfile">
+                    <h4 class="mb-0 btn-nav-accordion" data-toggle="collapse" data-target="#collapseProfile"
+                      aria-expanded="true" aria-controls="collapseProfile">
                       <div class="d-flex justify-content-between align-items-center">
                         <p>會議權益聲明</p>
                         <i class="fas fa-angle-up rotate-icon"></i>
@@ -305,7 +314,7 @@
               </div>
             </div>
           </section>
-          
+
         </div>
       </div>
     </section>
