@@ -11,6 +11,9 @@
 .bg--gray {
     background-color: #eeeeee;
 }
+.bg--darkgray {
+    background-color: #D6D6D6;
+}
 
 .deco-outline-red {
     border: 1px solid red;
@@ -38,6 +41,10 @@
 .deco-line {
     border-bottom: 1px solid #d5d5d5;
     padding-bottom: 1rem;
+}
+
+.border-gray {
+    border: 1px solid #B1B1B1;
 }
 
 

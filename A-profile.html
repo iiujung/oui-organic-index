@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <!-- bs4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+
+
+  <link rel="stylesheet" href="./css/site.css">
+  <!-- <link rel="stylesheet" href="./css/site.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/stylehelp.css">
+  <link rel="stylesheet" href="./css/index.css"> -->
+  <title>唯有機-會員專區：個人資料</title>
+
+
+</head>
+
+
+<body>
+  <div class="body-content container">
+    <!-- breadcrumb -->
+    <div class="row mb-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><i data-feather="home"></i><a href="#"></i>
+              唯有機</a></li>
+          <li class="breadcrumb-item" aria-current="page">會員專區</li>
+          <li class="breadcrumb-item active" aria-current="page">個人資料</li>
+        </ol>
+      </nav>
+    </div>
+    <section class="acountCenter">
+      <div class="row">
+        <!-- 選單列表 -->
+        <div class="col-md-2">
+          <!-- +手機版 -->
+          <section class="list d-block d-md-none mb-1">
+            <div id="userAccordion">
+              <div class="card border-0">
+                <div class="username border-bottom py-2 bg-light" id="headingOne">
+                  <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
+                    type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    李天天
+                    <i class="fas fa-angle-up"></i>
+                  </a>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#userAccordion">
+                  <div class="card-body p-0">
+                    <!-- 內層選單 -->
+                    <div class="accordion" id="categoryAccordion">
+                      <div class="card border-0">
+                        <div class="category border-bottom py-2 bg-light" id="headingOne">
+                          <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
+                            type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                            aria-controls="collapseTwo">
+                            會員專區
+                            <i class="fas fa-angle-up"></i>
+                          </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne"
+                          data-parent="#categoryAccordion">
+                          <div class="card-body">
+                            <ul class="list-unstyled pageSelect">
+                              <li class="py-2 subpage"><a href="#">會員專區</a></li>
+                              <li class="py-2 subpage active"><a href="#">我的點數</a></li>
+                              <li class="py-2 subpage"><a href="#">點數兌換專區</a></li>
+                              <li class="py-2 subpage"><a href="#">會員制度說明</a></li>
+                              <li class="py-2 subpage"><a href="#">會員等級說明</a></li>
+                              <li class="py-2 subpage"><a href="#">會員個人資料</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="list-unstyled ">
+                      <li class="border-bottom p-2"><a href="#">訂單查詢</a></li>
+                      <li class="border-bottom p-2"><a href="#">收藏清單</a></li>
+                      <li class="border-bottom p-2"><a href="#">我的優惠券</a></li>
+                      <li class="border-bottom p-2"><a href="#">客服留言</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+          <!-- +桌機版 -->
+          <section class="list d-none d-md-block mb-1">
+            <div class="accordion" id="categoryAccordion">
+              <div class="card border-0">
+                <div class="category border-bottom py-2 page-y active" id="headingOne">
+                  <a class="text-left d-flex justify-content-between align-items-center p-2 btn-nav-accordion"
+                    type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    會員專區
+                    <i class="fas fa-angle-up"></i>
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#categoryAccordion">
+                  <div class="card-body">
+                    <ul class="list-unstyled pageSelect">
+                      <li class="py-2 subpage"><a href="#">會員專區</a></li>
+                      <li class="py-2 subpage"><a href="#">我的點數</a></li>
+                      <li class="py-2 subpage"><a href="#">點數兌換專區</a></li>
+                      <li class="py-2 subpage"><a href="#">會員制度說明</a></li>
+                      <li class="py-2 subpage"><a href="#">會員等級說明</a></li>
+                      <li class="py-2 subpage active"><a href="#">會員個人資料</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="list-unstyled">
+              <li class="border-bottom page-y p-2"><a href="#">訂單查詢</a></li>
+              <li class="border-bottom page-y p-2"><a href="#">收藏清單</a></li>
+              <li class="border-bottom page-y p-2"><a href="#">我的優惠券</a></li>
+              <li class="border-bottom page-y p-2"><a href="#">客服留言</a></li>
+            </ul>
+          </section>
+        </div>
+        <!-- 主要內容 -->
+        <div class="col-md-10">
+          <section class="profile">
+            <!-- 編輯個人資料 -->
+            <div class="bg--light p-4 mb-4">
+              <div class="d-md-flex justify-content-between mb-3">
+                <h3 class="font-weight-bold">會員個人資料</h3>
+                <div class="d-flex flex-column">
+                  <a href="#" class="alink-deco text-muted mb-3">編輯個人資料</a>
+                  <a href="#" class="alink-deco text-muted">編輯問卷</a>
+                </div>
+              </div>
+              <div class="my-5">
+                <form action="" method="">
+                  <div class="form-group row">
+                    <div class="col-md-3">
+                      <label for="phone">手機號碼</label>
+                    </div>
+                    <div class="col-md-9">
+                      <input type="tel" id="phone" value="TW+886 12348579">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-3">
+                      <label for="email">電子信箱</label>
+                    </div>
+                    <div class="col-md-9">
+                      <input type="email" id="email" value="123@gmail.com">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-3">
+                      <label for="password">密碼</label>
+                    </div>
+                    <div class="col-md-9">
+                      <input type="password" id="password" value="examplepassword">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-3">
+                      <label for="idname">姓名</label>
+                    </div>
+                    <div class="col-md-9">
+                      <input type="text" id="idname" value="李天天">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-3">
+                      <label for="birthday">生日</label>
+                    </div>
+                    <div class="col-md-9">
+                      <input type="date" id="birthday" value="1978-09-20">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-3">
+                      <label for="subscribe">Email通知</label>
+                    </div>
+                    <div class="col-md-9 d-flex flex-column">
+                      <label for="subscribe-item01">
+                        <input type="checkbox" name="subscribe" id="subscribe-item01" checked>
+                        活動
+                      </label>
+                      <label for="subscribe-item02">
+                        <input type="checkbox" name="subscribe" id="subscribe-item02" checked>
+                        交易
+                      </label>
+                      <label for="subscribe-item03">
+                        <input type="checkbox" name="subscribe" id="subscribe-item03" checked>
+                        客服回覆
+                      </label>
+                      <label for="subscribe-item04">
+                        <input type="checkbox" name="subscribe" id="subscribe-item04" checked>
+                        會員優惠
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- 常用訂購資料 -->
+            <div class="div mb-4">
+              <h4 class="mb-2">常用訂購資訊</h4>
+              <div class="row mx-auto mb-2" style="width: 90%;">
+                <div class="col-md-4">常見收件人</div>
+                <div class="col-md-8 d-flex justify-content-between">
+                  <p>陳曉明-1112台北市北投區中央北路3段345號6F</p>
+                  <div class="d-flex">
+                    <div class="icon--y"><i data-feather="edit"></i>
+                    </div>
+                    <div class="icon--y"><i data-feather="trash"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 offset-md-4 border-gray p-2">
+                  <div class="d-flex justify-content-center">
+                    <i data-feather="plus" class="mx-auto"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row mx-auto mb-2" style="width: 90%;">
+                <div class="col-md-4">常用統一編號</div>
+                <div class="col-md-8 d-flex justify-content-between">
+                  <p>57839829</p>
+                  <div class="d-flex">
+                    <div class="icon--y"><i data-feather="edit"></i>
+                    </div>
+                    <div class="icon--y"><i data-feather="trash"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 offset-md-4 border-gray p-2">
+                  <div class="d-flex justify-content-center">
+                    <i data-feather="plus" class="mx-auto"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 會員權益說明 -->
+            <div class="bg--darkgray">
+              <div class="accordion" id="accordionProfile">
+                <div class="card border-0">
+                  <div class="card-header bg--darkgray"" id="headingOne">
+                    <h4 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      會議權益聲明
+                    </h4>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionProfile">
+                    <div class="card-body">
+                      <p>如何辦理退貨?</p>
+                      <p>請於猶豫期（收到商品7天）內至會員專區 -
+                        查單查詢/查看訂單，選擇欲辦理退貨之訂單，按照系統步驟申請退貨，並完成填寫相關退款資料（請務必填寫正確資料，以免影響後續撥款），後續我們將會安排物流人員於5-7個工作天內前往取件。</p>
+                      <p>另請您配合以下幾點事項，將會快加退換貨的處理時效：</p>
+                      <p>1.退換的商品必須保持商品本體、原廠內外包裝、配件、贈品、保證書、及所有附隨文件或資料的完整性，切勿缺漏任何配件，退貨前建議您可先拍照留存。 </p>
+                      <p>
+                        2.請您務必以原包裝外紙箱將商品先妥當，若外紙箱已丟棄，請另使用其他紙箱包覆於商品原廠彩盒包裝外，切勿直接於原廠包裝上黏貼紙張、書寫文字及任何會損毀外彩盒的行為，若有損毀將可能依照損毀程度酌收回復完整必要的費用。
+                      </p>
+                      <p>3.若為單筆組合商品，需【整筆】訂單辦理退貨，請恕無法單獨退貨部分商品。</p>
+                      <p>4.消費未達免運門檻（宅配/超取$2000；宅配貨到付款$2500），或者單筆退貨後未達免運門檻；辦理退貨仍需負擔此訂單之作業處理費(出貨包裝作業費用$70)。</p>
+                      <p>5.請勿將商品自行寄回，未經申請自行寄回之商品將拒收並退回且無法退款。</p>
+                      <p>6.站上商品均屬個人衛生用品，一經拆封概不受理退換貨；不符合退貨標準之商品將退回並無法退款。 </p>
+                      <p>7.特殊商品(如：短效商品/NG商品)一經售出後恕不受理退換貨。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slick.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.subpage').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+      });
+      $('.page-y').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+      })
+    });
+  </script>
+</body>
+
+</html>
