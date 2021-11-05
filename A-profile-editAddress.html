@@ -236,6 +236,7 @@
                       <a href="" class="btn btn-outborder-dark">取消</a>
                     </div>
                   </div>
+
                 </form>
               </div>
             </div>
@@ -244,14 +245,72 @@
               <h4 class="mb-2">常用訂購資訊</h4>
               <div class="row mx-auto mb-2" style="width: 90%;">
                 <div class="col-md-4">常見收件人</div>
-                <div class="col-md-8 d-flex justify-content-between p-0">
-                  <p>陳曉明-1112台北市北投區中央北路3段345號6F</p>
-                  <div class="d-flex">
-                    <div class="icon--y"><i data-feather="edit"></i>
+                <div class="col-md-8 border-gray mb-2 py-3">
+                    <div class="row mb-2">
+                      <div class="col-md-4">
+                        <label for="addressName">收件人姓名</label>
+                      </div>
+                      <div class="col-md-8">
+                        <input type="text" id="addressName" name="addressName" class="w-100">
+                      </div>
                     </div>
-                    <div class="icon--y"><i data-feather="trash"></i>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label for="addressPhone">收件人電話號碼</label>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="form-group row">
+                          <div class="col-md-4">
+                            <input type="tel" id="addressPhone" name="addressPhone" class="w-100">
+                          </div>
+                          <div class="col-md-8">
+                            <input type="tel" id="addressPhone" name="addressPhone" class="w-100">
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label for="addressInfo">收件地址</label>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="row">
+                          <div class="form-group col-md-12">
+                            <select id="addressInfo" class="form-control">
+                              <option selected>國家</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-12">
+                            <select id="addressInfo" class="form-control">
+                              <option selected>城市/縣</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <select id="addressInfo" class="form-control">
+                              <option selected>郵遞區號</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-8">
+                            <select id="addressInfo" class="form-control">
+                              <option selected>地區</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-12">
+                            <input type="text" class="form-control" id="addressInfo" placeholder="詳細地址">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-9 offset-md-3 mr-0">
+                        <a href="" class="btn btn-dark mb-2">儲存變更</a>
+                        <a href="" class="btn btn-outborder-dark mb-2">取消</a>
+                      </div>
+                    </div>
                 </div>
                 <!-- 新增按鈕 -->
                 <div class="col-md-8 offset-md-4 p-0">

@@ -44,11 +44,16 @@
   padding-bottom: 1rem;
 }
 
-.btn.border-gray {
-  border: 1px solid #b1b1b1;
+.border-gray {
+  border: 1px solid #b1b1b1!important;
 }
 
+
+
 .icon--y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 36px;
   height: 36px;
 }
@@ -1422,6 +1427,13 @@ A-customerService.html
   background-color: transparent;
   border: transparent;
 }
+
+.profile .form-control {
+  color: #a7a7a7;
+  border: 1px solid #b1b1b1;
+  border-radius: 0rem;
+}
+
 
 /*購物車頁面*/
 /*nextStep*/
