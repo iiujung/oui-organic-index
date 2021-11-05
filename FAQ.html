@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <!-- bs4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+
+
+
+  <link rel="stylesheet" href="./css/site.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/stylehelp.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>常見問題</title>
+</head>
+
+<body>
+  <div class="body-content container">
+    <!-- breadcrumb -->
+    <div class="row mb-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><i data-feather="home"></i><a href="#"></i>
+              唯有機</a></li>
+          <li class="breadcrumb-item active" aria-current="page">常見問題</li>
+        </ol>
+      </nav>
+    </div>
+    <section class="faq-section">
+      <div >
+        
+        <!-- 主要內容 -->
+        <div>
+          <div class="title">
+            <h3 class="font-weight-bold mr-3">常見問題</h3>
+          </div>
+          <div>
+            <div class="faq-collapse" id="faq-content">
+              <div class="card">
+                <div class="card-header" id="order-schedule">
+                  <h2 class="mb-0">
+                    <button class="p-md-4 p-2 btn-block text-left" data-toggle="collapse" data-target="#oreder-schedule-answer" aria-expanded="true" aria-controls="oreder-schedule-answer">
+                      訂單進度
+                      <i class="fa fa-chevron-down float-right iconOpen"></i>
+                      <i class="fa fa-chevron-up float-right iconClose"></i>
+                    </button>
+                  </h2>
+                  
+                </div>
+
+                <div id="oreder-schedule-answer" class="collapse show" aria-labelledby="order-schedule" data-parent="#faq-content">
+                  <div class="card-body">
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>是否訂購成功</h4>
+                      <p>訂單成立後，系統會發送『訂單確認』電子郵件給您，確認訂單詳細資料，包括訂購明細和收件資訊。</p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>如何追蹤訂單進度</h4>
+                      <p>有關商品的出貨進度，可在『我的帳戶>訂單查詢』中查詢。</p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>如何取消訂單</h4>
+                      <p>商品尚未出貨前，可於『我的帳戶>訂單查詢』中，點選“<span class="text-red">取消訂單</span>”按鈕</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="refund-order">
+                  <h2 class="mb-0">
+                    <button class="p-md-4 p-2 btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#refund-order-answer" aria-expanded="false" aria-controls="refund-order-answer">
+                      退換貨/退款說明
+                      <i class="fa fa-chevron-down float-right iconOpen"></i>
+                      <i class="fa fa-chevron-up float-right iconClose"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="refund-order-answer" class="collapse" aria-labelledby="refund-order" data-parent="#faq-content">
+                  <div class="card-body">
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>退換貨說明</h4>
+                      <p>請參考『購物說明>退換貨說明』。</p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>退款</h4>
+                      <h4>一、什麼時候退款</h4>
+                      <p>待商店回收包裹執行“退貨完成”後，若退款帳戶資訊正確無誤，七至十工作天內退款至指定帳戶。退貨進度可於會員專區>訂單查詢中確認。</p>
+                      <div class="mx-auto img-content">
+                        <img src="./img/FAQ/refunds_progress_i18n.png" alt="退款進度圖" class="w-100">
+                      </div>
+                      
+                      <ul class="pl-md-4 pl-2">
+                        <li>
+                          <h6>退貨申請中</h6>
+                          <p>信用卡分期付款、ATM付款、超商付款、貨到付款：請在退貨申請時填寫完整且正確的退款帳號資料。</p>
+                        </li>
+                        <li>
+                          <h6>處理中</h6>
+                          <p>依照商店退貨處理時程</p>
+                        </li>
+                        <li>
+                          <h6>退貨完成</h6>
+                          <p>通知方式：推播、信件</p>
+                        </li>
+                        <li>
+                          <h6>退款中 (預計7~10個工作天)</h6>
+                          <p>信用卡付款：刷退<br>
+                            信用卡分期付款、部分退款、ATM付款、超取付款、貨到付款：退款至指定帳號</p>
+                        </li>
+                        <li>
+                          <h6>退款完成</h6>
+                          <p>通知方式：推播、信件</p>
+                        </li>
+                        <li>
+                          <h6>退款失敗</h6>
+                          <p>通知方式：推播、信件，待提供完善資料後，再次進行退款作業。</p>
+                        </li>
+                      </ul>
+                      <p class="mb-3">註：需於訂購時完成電子郵件資料填寫，才能收到信件通知</p>
+                      <p>
+                        「退貨完成前」流程如有問題，請洽商店客服。<br/>
+                        「退貨完成後」流程如有問題，請至客服留言選擇問題類別“發票與退款”提問。<br/>
+                        <span class="text-red">
+                          提醒您!若您已取得紙本發票或已過營業稅期的發票電子檔，待退貨完成後，客服人員會與您聯絡相關退貨事宜( 例如：發票處理或銷貨折讓)
+                        </span>
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>二、顯示退款完成但沒收到</h4>
+                      <ol class="pl-md-4 pl-2">
+                        <li>
+                          請至會員專區>訂單查詢>訂單明細>退款資訊中，確認退款資訊。
+                        </li>
+                        <li>
+                          使用網銀/ATM查詢較不準確，請刷摺確認款項明細。
+                        </li>
+                        <li>
+                          請確認存摺是否有『九易宇軒股份有限公司』之款項匯入。
+                        </li>
+                      </ol>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>三、為什麼退款失敗</h4>
+                      <ol class="pl-md-4 pl-2">
+                        <li>
+                          誤將金融卡號當成退款帳號填入。
+                        </li>
+                        <li>
+                          填入非帳戶持有人的身分證。
+                        </li>
+                      </ol>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>四、為什麼退款需要填身分證字號</h4>
+                      <p>
+                        ※ 為確保退款帳戶與身份的正確性，依已同意之隱私權及網站使用條款及<a href="">台灣票據交換所</a>規定，以下資訊僅因退款用於台灣票據交換所一次性驗證，不會用於其他用途。
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>五、退款失敗/退款完成為什麼沒有通知</h4>
+                      <p>
+                        退貨/退款進度皆可於會員專區>訂單查詢中確認，<br>
+                        APP下訂→APP推播通知(若下訂時有填寫E-MAIL會收到通知信件)<br>
+                        官方網站下訂→E-MAIL通知信
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>六、退款方式會依您使用的付款方式退款</h4>
+                      <ol class="pl-md-4 pl-2">
+                        <li>
+                          信用卡一次付清：如果您是信用卡付款，我們會將您的款項刷退至您當初刷卡付款的信用卡帳戶中。
+                        </li>
+                        <li>
+                          信用卡分期付款：若刷卡金額與退款金額相符，我們會將您的款項刷退至您當初刷卡付款的信用卡帳戶中；若刷卡金額與退款金額不符，將使用匯款方式退款，煩請於商店執行退貨完成後，至會員專區>訂單查詢中填寫退款帳戶資料。
+                        </li>
+                        <li>
+                          ATM付款：在您在填寫退貨申請時，務必依退貨退款頁面，填寫正確的退款帳號資料。商店確認商品退貨完成後，我們將於7~10個工作天內，退款至您的指定帳號中。
+                        </li>
+                        <li>
+                          便利商店/超商付款取貨：在您在填寫退貨申請時，務必依退貨退款頁面，填寫正確的退款帳號資料。商店確認商品退貨完成後，我們將於7~10個工作天內，退款至您的指定帳號中。
+                        </li>
+                      </ol>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>七、為什麼運費沒有退</h4>
+                      <p>
+                        訂單運費為商店寄出商品時已負擔之費用，若後續申請退貨將針對商品銷售金額退款。
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>八、為什麼退款金額不正確</h4>
+                      <p>
+                        退貨/退款資訊及款項，皆可於會員專區>訂單查詢中確認。
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>九、我輸入的退款帳號好像填錯了，可以從哪裡修改</h4>
+                      <p>
+                        為保障會員交易資料安全，退貨申請送出後資料立即加密送出，若需確認或修改，煩請來信系統/金流商之客服信箱(servicetw@91app.com)，提供訂單編號、收件人手機號碼以及存摺封面，相關人員將盡快協助後回覆，謝謝。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="about-coupon">
+                  <h2 class="mb-0">
+                    <button class="p-md-4 p-2 btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#about-coupon-answer" aria-expanded="false" aria-controls="about-coupon-answer">
+                      折價券注意事項
+                      <i class="fa fa-chevron-down float-right iconOpen"></i>
+                      <i class="fa fa-chevron-up float-right iconClose"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="about-coupon-answer" class="collapse" aria-labelledby="about-coupon" data-parent="#faq-content">
+                  <div class="card-body">
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                      <h4>我的折價劵</h4>
+                      <p>進入『我的帳戶>我的優惠劵』，可以查詢折價劵或輸入折價劵號。</p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>如何使用折價劵</h4>
+                      <p>在結帳時，點選使用折價券或填入折價券折扣碼，就可以享有優惠喔！</p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 px-2">
+                      <h4>折價劵使用規則</h4>
+                      <ol class="pl-md-4 pl-2">
+                        <li>
+                          每次線上結帳，只能使用一張折價券，門市及櫃點使用則以另行公告為主。
+                        </li>
+                        <li>
+                          使用折價券折抵後，每項商品金額不可為零。
+                        </li>
+                        <li>
+                          若結帳商品標註為「不適用折價券」，則該商品不能使用折價券進行折抵。
+                        </li>
+                        <li>
+                          折價券僅能使用一次且不找零，一經使用無法恢復。
+                        </li>
+                        <li>
+                          使用折價券的訂單如退貨或取消部分商品，折價券將失效不會歸還。
+                        </li>
+                        <li>
+                          折價券有使用效期，逾期後則無法使用，且無法恢復。
+                        </li>
+                        <li>
+                          折價券不可折抵運費。
+                        </li>
+                      </ol>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="e-invoice">
+                  <h2 class="mb-0">
+                    <button class="p-md-4 p-2 btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#e-invoice-answer" aria-expanded="false" aria-controls="e-invoice-answer">
+                      電子發票說明
+                      <i class="fa fa-chevron-down float-right iconOpen"></i>
+                      <i class="fa fa-chevron-up float-right iconClose"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="e-invoice-answer" class="collapse" aria-labelledby="e-invoice" data-parent="#faq-content">
+                  <div class="card-body">
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                      <h4>為何沒有收到發票?</h4>
+                      <p>根據財政部令 台財資字第 1070001765 號 「電子發票實施作業要點」，自 103 年 1 月 1 日起，於本網站消費開立之電子發票，無實體紙本發票故不會寄送。本網站會於期限內將開立之電子發票，上傳至財政 部電子發票整合服務平台留存。您可利用會員專區>客服中心/常見問題>電子發票歸戶功能，進行會員載具歸戶作 業。經歸戶後的中獎發票將由「財政部電子發票整合平台」進行領獎相關通知及作業；未歸戶的中獎發票，將由本網站以電子郵件、推播及簡訊通知您領獎相關通知及作業。(電子發票及會員載具歸戶說明， 詳見<a class="text-blue" href="https://www.einvoice.nat.gov.tw/">財政部電子發票整合平台</a> )</p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                      <h4>如何索取紙本發票?</h4>
+                      <p>
+                        若您要索取電子發票證明聯，麻煩您至「訂單查詢>點選要查詢的訂單明細>電子發票說明>索取紙本發票」，客服人員將會盡速為您處理。<br>
+                        小提醒： 商品取貨後可至「訂單查詢>點選要查詢的訂單明細>發票」即可查詢您的電子發票。
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                      <h4>有填寫統編／抬頭的發票會寄嗎?何時會寄出?</h4>
+                      <p>
+                        打統編／抬頭的發票將在發票開立後以E-mail方式寄出電子發票證明聯。
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                      <h4>捐贈的發票，你們會怎麼處理?</h4>
+                      <p>
+                        根據財政部令 台財資字第 1070001765 號 「電子發票實施作業要點」第二十二條說明，財政部電子發票整合平台應每二月為一期，於開獎日前，將買受人所捐贈之該期電子發票明細資料通知各該受捐贈機構，並由財政部電子發票整合平台於對獎後，通知受捐贈機構領獎。<br>
+                        另，依據法令規定，已捐贈的發票無法索取紙本發票及更改捐贈對象，如有退換貨需求，本公司將會將該發票作廢。
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                      <h4>發票要加打統編或統編／抬頭填錯怎麼辦?</h4>
+                      <p>
+                        若您尚未收到紙本發票，麻煩您至「訂單查詢>點選要查詢的訂單明細>發票」，找出該筆訂單，點選該 筆訂單後的聯絡客服，並詳填您的需求，客服人員將會盡速為您處理。<br>
+                        * 有統編／抬頭的發票將在發票開立後以E-mail方式寄出電子發票證明聯，寄出後訂單查詢頁的發票寄送日欄位將會顯示寄 出日期。<br>
+                        若您已收到紙本發票或紙本發票已寄出，煩請於收到發票三日內，填寫發票背面折讓單，並附上您要修改 的抬頭、統編，將發票寄回台北市南港區八德路四段 768 巷 5 號 6 樓 九易宇軒股份有限公司會計部收， 我們將為您重開發票。提醒您！屆時發票將會重新配號，新的發票月份將為申請當月，發票號碼也將更新， 恕無法以原發票號碼列印。
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                      <h4>我怎麼知道發票號碼?</h4>
+                      <p>
+                        在您付款完成、商品出貨後本網站就會開立發票，您可隨時到「訂單查詢>點選要查詢的訂單明細>發票」， 點入訂單明細查詢您的發票號碼。<br>
+                        若您於訂購時選擇將發票捐贈，為了保障受贈單位的權益，捐贈發票號碼末三碼將會以*號表示。
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                      <h4>如何領取中獎發票及兌獎?</h4>
+                      <p>
+                        每逢單月 25 日開獎後，將由「財政部電子發票整合平台」統一進行對獎作業，於單月 28 日收到「財政部電子發票整合平台」提供中獎清冊後， 於訂單查詢頁「發票」顯示中獎資訊，通知方式將依消費者使用發票載具類型及載具歸戶狀態，處理方式如下：<br>
+                        1. 發票載具已歸戶：使用「手機條碼載具 」或「自然人憑證載具」，中獎發票將由「財政部電子發票整合平台」進行 領獎相關通知及作業。<br>
+                        2. 發票載具未歸戶：由本網站以電子郵件、推播通知您領獎相關通知及作業。<br>
+                        <ol class="px-md-2 px-1" style="list-style-type: none;">
+                          <li>
+                            (1).FamiPort列印：<br>
+                            中獎金額NT$9,999(含)以下，則請至全家FamiPort列印中獎電子發票。
+                          </li>
+                          <li>
+                            (2).紙本寄送<br>
+                            中獎金額為NT$10,000(含)以上，將以掛號方式，寄送到您提供的地址。
+                          </li>
+                          <li>
+                            (3).親自領取<br>
+                            中獎金額NT$200,000(含)以上，請本人攜帶身分證明文件，至九易宇軒(股)公司親自領取。
+                          </li>
+                        </ol>
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                      <h4>沒中獎的發票會寄給我嗎?</h4>
+                      <p>
+                        根據財政部令 台財資字第 1020002795 號 「電子發票實施作業要點」，於本網站消費開立之統一發票將不主動寄送，但需於期限內上傳至整合服務平台留存，消費者可利用財政部電子發票整合平台查詢消費紀錄。
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                      <h4>可不可以把發票改成捐贈?</h4>
+                      <p>
+                        很抱歉!若您訂購時未選擇捐贈發票，將無法修改為捐贈發票。
+                      </p>
+                    </div>
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                      <h4>發票可否指定開立日期、更改品名或金額?</h4>
+                      <p>
+                        很抱歉!訂單發票印製為系統自動作業，發票上商品名稱將依訂購的品名和金額開立，請恕無法指定開立日期、更改品名或金額。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="e-invoice-to">
+                  <h2 class="mb-0">
+                    <button class="p-md-4 p-2 btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#e-invoice-to-answer" aria-expanded="false" aria-controls="e-invoice-to-answer">
+                      電子發票歸戶
+                      <i class="fa fa-chevron-down float-right iconOpen"></i>
+                      <i class="fa fa-chevron-up float-right iconClose"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="e-invoice-to-answer" class="collapse" aria-labelledby="e-invoice-to" data-parent="#faq-content">
+                  <div class="card-body">
+                    <div class="paragraph py-2 px-md-3 
+                    px-2">
+                    <button class="btn btn-dark mb-2 py-3 px-2">會員載具歸戶</button>
+                      <p>
+                        小提醒 :<br>
+                        按下會員載具歸戶，系統將自動連結至政府電子發票平台進行歸戶<br>
+                        歸戶完成後，您即可在政府電子發票平台，查詢所有本店會員卡的電子發票<br>
+                        已進行歸戶的電子發票，仍可在本店查詢所有的消費明細<br>
+                        歸戶後的中獎發票將由財稅中心通知，本公司不再另行通知<br>
+                        歸戶查詢 :
+                        <a class="text-blue" href="https://www.einvoice.nat.gov.tw/" >財政部電子發票整合平台</a><br>
+                        財稅中心24小時免費服務電話 0800-52-1988
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slick.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+    <script>
+      $(document).ready(function () {
+        $('.subpage').click(function() {
+        $(this).addClass('active').siblings().removeClass('active');
+        });
+      });
+    </script>
+</body>
+
+</html>
