@@ -2432,7 +2432,7 @@ A-customerService.html
   margin-bottom: 0px;
 }
 
-.orderDetail .order_head h4 {
+.orderDetail .order_head h3 span {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 0px;
